@@ -2,6 +2,7 @@
 #include <fstream>
 #include <inttypes.h>
 #include <cstdlib> 
+#include "util.hpp"
 //#define consoleIO
 //#define assert
 
@@ -48,17 +49,6 @@ unsigned __int128 X = 0; /* (P << 64) + B has to be stored in order to calculate
 fstream input; 
 uint64_t fileSize;
 
-/* Prints the 64-bit long integer in HEX*/
-void printInt64(uint64_t n) {
-    printf("%016lX\n", n);
-}
-
-/* Prints the 128-bit long integer in HEX*/
-void printInt128(unsigned __int128 n) {
-    uint64_t * numberHalf = new uint64_t[2];
-    numberHalf = (uint64_t*) &n;
-    printf("%016lX%016lX\n", numberHalf[1], numberHalf[0]);
-}
 
 /* Prints information about the data structure */
 void printEnd() {
@@ -68,59 +58,13 @@ void printEnd() {
     cout << "----------------------------------------------------\n\n";
 } 
 
-/* Checks the state flags of fstream  */
-void inputErrorHandling() {
-    if(input.good()) {
-        return;
-    } else {
-        cerr << "Error in fstream\n";
-    }
-    
-    if(!input.is_open()) {
-        cerr << "File not found\n";
-        exit(-1);
-    }
-    
-    if(input.eof()) {
-        cout << "End of file reached\n";
-        printEnd();
-        exit(0);
-    }
-    
-    if(input.bad()) {
-        cerr << "Bad fstream\n";
-        exit(-1);
-    }
-    
-    if(input.fail()) {
-        cerr << "fsteam failed\n";
-        exit(-1);
-    } 
-}
-
-/* Calculates and prints basic information about the file */
-void printSizeOfInputFile() {
-    uint64_t fileStart, fileEnd;
-    fileStart = input.tellg();
-    input.seekg(0, ios::end);
-    fileEnd = input.tellg();
-    fileSize = fileEnd - fileStart;
-    
-    numberOfBlocks = fileSize/blockSize;
-    inputErrorHandling();
-    cout << "File size:          " << fileSize << " byte\n";
-    cout << "File size:          " << numberOfBlocks      << " blocks\n";
-}
-
-
-
 
 /* Returns a random prime from the array 'primes' */
 unsigned __int128 choosePrime() {
     srand(time(0));
     //unsigned __int128 prime = primes[0];
     unsigned __int128 prime = primes[(rand() % numberOfPrimes)];
-    cout << "Random prime:       "; printInt128(prime);
+    cout << "Random prime:       "; util::printInt128(prime);
     return prime;
 }
 
@@ -134,20 +78,20 @@ uint64_t chooseSeed() {
         tseed += rand();
     } while (tseed >= q);
     
-    //tseed=1;
+    tseed = q - 0x8000000000000000ULL;
     cout << "Random seed:                        "; printf("%016lX\n", tseed);
     return tseed;
 }
 
 /* Reads a block from the input text and return the integer value of it. */
 uint64_t readBlock(long blockNumber) {
-    //inputErrorHandling();
     uint64_t block = 0;
     if(blockNumber == 0) {
         return seed;
     } else {
         input.seekg((blockNumber-1)*blockSize); 
-        input.read(iMemblock, blockSize);
+        input.read((char*) &block, blockSize);
+        
     }
     #ifdef consoleIO
     /* Print Text as chars*/
@@ -163,24 +107,11 @@ uint64_t readBlock(long blockNumber) {
     }
     cout << "\n";
     #endif
-    
-    
-    
-    for(unsigned int j = 0; j < blockSize; j++) {
-        block <<= 8;
-        block += (unsigned char) iMemblock[j];
-    }
-    
-    #ifdef consoleIO
-    cout << "B[" << blockNumber << "] =                             ";
-    printInt64(block);
-    #endif
-    
+
     return block;
 }
 /* Overwrite current block with current fingerprint*/
 void writeBlock(long blockNumber) {
-    //inputErrorHandling();
     input.seekp((blockNumber-1)*blockSize);
     input.write((char*) &P, blockSize);
 }
@@ -188,7 +119,7 @@ void writeBlock(long blockNumber) {
 /* Calculates the new Rabin-Karp fingerprint. The current block and old fingerprint are sufficient for the calculation, because Rabin-Karp is a rolling hash function.*/
 uint64_t calculateFingerprint(uint64_t currentB, uint64_t oldP) {
     
-    /*If we had to save the information that the block has 1 as the MSB, our fingerprint got modified. Here we reset the first bit again */
+    /*If we had to save the information that the block has 1 as the MSB, our fingerprint got modified. Here we reset the first bit again. */
     oldP = oldP & ~0x8000000000000000ULL;
     X = oldP;
     X = X << 64;
@@ -196,16 +127,16 @@ uint64_t calculateFingerprint(uint64_t currentB, uint64_t oldP) {
     
     
     #ifdef consoleIO
-    cout << "last P:                             "; printInt64(oldP);
-    cout << "X after addition b: "                ; printInt128(X);
+    cout << "last P:                             "; util::printInt64(oldP);
+    cout << "X after addition b: "                ; util::printInt128(X);
     #endif 
     
     X = X % q;
     P = (uint64_t) X;
     
     #ifdef consoleIO
-    cout << "X after modulo q:   "; printInt128(X);
-    cout << "new fingerprint is:                 "; printInt64(P);
+    cout << "X after modulo q:   "; util::printInt128(X);
+    cout << "new fingerprint is:                 "; util::printInt64(P);
     #endif
     
     #ifdef assert
@@ -223,7 +154,7 @@ bool checkForNoCollision() {
     cout << "------------Checking for collisions-----------------\n";
     
     input.seekg(0, ios::beg);
-    unsigned int progress = 1;
+    //unsigned int progress = 1;
     for(unsigned long i = 0; i <= fileSize/blockSize; i++) {
     //for(unsigned long i = 0; i <= 10; i++) {
         
@@ -247,8 +178,6 @@ bool checkForNoCollision() {
 /* Builds the in-place LCE datastructure. The old text will be overwritten*/
 void buildInPlaceLCE() {
     cout << "\n--------Building in-place LCE datastructure---------\n";
-    
-    //B = seed;
     P = seed;
     
     unsigned int progress = 1; 
@@ -273,7 +202,8 @@ void buildInPlaceLCE() {
             progress++;
         }
     }
-    writeBlock(fileSize/blockSize);
+    /* Write the last block, which was calculated already */
+    writeBlock((fileSize/blockSize)+1);
     cout << "\n--------Successfully build LCE datastructure--------\n";
     cout << "Number of blocks above q: " << blocksWithSetMSB << "/" << numberOfBlocks << endl;
 }
@@ -287,16 +217,15 @@ void safePlan() {
 
 int main(int argc, char *argv[]) {
     
-    
     /* Initialize the fstream */
     if(argc != 2) {
-        cout << "Usage: createDatastructure FILE_PATH\n" 
-        << "Example: createDatastructure RKFenglish.s\n";
+        cout << "Usage: createDataStructure FILE_PATH\n" 
+        << "Example: createDataStructure RKFenglish.s\n";
         return EXIT_FAILURE;
     }
     
     input.open(argv[1], ios::in|ios::out|ios::binary);
-    inputErrorHandling();
+    util::inputErrorHandling(&input);
     
     
     
@@ -304,7 +233,10 @@ int main(int argc, char *argv[]) {
     cout << "-----------------PROGRAM START----------------------\n";
     cout << "----------------------------------------------------\n\n";
     
-    printSizeOfInputFile();
+    fileSize = util::calculateSizeOfInputFile(&input);
+    numberOfBlocks = fileSize/blockSize;
+    cout << "File size:          " << fileSize << " byte\n";
+    cout << "File size:          " << numberOfBlocks      << " blocks\n";
     
     
     /* Choose a random prime and a random seed */
@@ -314,8 +246,8 @@ int main(int argc, char *argv[]) {
     
     /* Build the data structure */
     if(checkForNoCollision()) {
-        cout << "Random prime:       "; printInt128(q);
-        cout << "Random seed:                        "; printInt64(seed);
+        cout << "Random prime:       "; util::printInt128(q);
+        cout << "Random seed:                        "; util::printInt64(seed);
         buildInPlaceLCE();
     } else {
         safePlan();
