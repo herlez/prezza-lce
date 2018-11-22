@@ -3,113 +3,68 @@
 #include <inttypes.h>
 #include <cstdlib> 
 #include "util.hpp"
-//#define consoleIO
-//#define assert
+//#define consoleIO /* This prints out every block/fingerprint for debug/analysis */
 
 using namespace std;
 
-/* Size of each block in bits */
-const int tau = 64;
-/* Size of one character in bits */
-const int bytesize = 8;
-/* Number of characters per block */
-const streampos blockSize = tau/bytesize;
+
+const int tau = 64; /* Size of each block in bits */
+const int bytesize = 8; /* Size of one character in bits */
+const streampos blockSize = tau/bytesize; /* Number of characters per block */
 
 
 /*We need a 64 bit prime, close to 2^63.
 Here we store the 5 smallest primes and choose a random one in our LCE data structure construction*/
 unsigned const __int128 primes[] = { 0x800000000000001dULL, 0x8000000000000063ULL, 0x800000000000007bULL, 0x8000000000000083ULL, 0x800000000000009bULL };
 unsigned const int numberOfPrimes = 5;
-unsigned __int128 q;
+unsigned __int128 q; /* The prime number */
 
 
-/*The random seed. It is supposed to be between 0 and q*/
+/*Prezza suggests to use a random seed between 0 and q-1. Because we won't run in any collision problems, we use the seed to store our prime number. This way we can reconstruct the text without any additional information*/
 uint64_t seed;
 
 
-
-/*Counts the number of blocks, where 1 is the most significant bit. This information has to be saved */
-long blocksWithSetMSB = 0;
-/*Counts the number of fingerprints, where 1 is the most significant bit. Idealy schould be zero.*/
-long fingerprintsWithSetMSB = 0;
-/*Counts the number of blocks processed. */
-long numberOfBlocks = 0;
+uint64_t fileSize; /* The size of the file in byte */
+uint64_t numberOfBlocks; /* The size of the file in blocks */
 
 
-
-char * iMemblock = new char[tau/bytesize]; /*buffer for current block*/
-char * oMemblock = new char[tau/bytesize]; /*buffer for one fingerprint that gets printed*/
-/*TODO:DELETE*/char * tMemblock = new char[tau/bytesize]; /*temporary buffer for a fingerprint, because the endianess has to be reversed..*/
-
-uint64_t B = 0; /*current Block*/
-uint64_t P = 0; /*current Fingerprint*/
-unsigned __int128 X = 0; /* (P << 64) + B has to be stored in order to calculate the fingerprint, */
+uint64_t B; /*Current block*/
+uint64_t P = 0; /*Current fingerprint*/
+unsigned __int128 X; /* We need an 128 bit long integer in order to calculate the fingerprint. (P << 64) + B has to be stored for this purpose */
 
 
-fstream input; 
-uint64_t fileSize;
+fstream input; /* The fstream, which reads from the file and overwrites the file */
 
-
-/* Prints information about the data structure */
-void printEnd() {
-    cout << numberOfBlocks*blockSize << " Bytes processed" << endl;
-    cout << "\n----------------------------------------------------\n";
-    cout << "-----------------PROGRAM END------------------------\n";
-    cout << "----------------------------------------------------\n\n";
-} 
 
 
 /* Returns a random prime from the array 'primes' */
 unsigned __int128 choosePrime() {
     srand(time(0));
-    //unsigned __int128 prime = primes[0];
     unsigned __int128 prime = primes[(rand() % numberOfPrimes)];
     cout << "Random prime:       "; util::printInt128(prime);
     return prime;
 }
 
-/* Chooses a random seed between 0 and q-1 */
+/* Here we return the chosen prime number but with the first bit set to 0. So that we can reconstruct the prime with the first block*/
 uint64_t chooseSeed() {
-    uint64_t tseed = q;
-    srand(time(0));
-    do {
-        tseed = rand();
-        tseed <<= 32;
-        tseed += rand();
-    } while (tseed >= q);
-    
-    tseed = q - 0x8000000000000000ULL;
-    cout << "Random seed:                        "; printf("%016lX\n", tseed);
+    uint64_t tseed = q - 0x8000000000000000ULL;
+    cout << "Random seed:                        "; util::printInt64(tseed);
     return tseed;
 }
 
 /* Reads a block from the input text and return the integer value of it. */
 uint64_t readBlock(long blockNumber) {
     uint64_t block = 0;
+    /* The seed is treated as block number 0.*/
     if(blockNumber == 0) {
         return seed;
     } else {
         input.seekg((blockNumber-1)*blockSize); 
         input.read((char*) &block, blockSize);
-        
-    }
-    #ifdef consoleIO
-    /* Print Text as chars*/
-    cout << "T[" << blockNumber << "] =                             ";
-    
-    for(unsigned int j = 0; j < blockSize; j++) {
-        if (iMemblock[j] == '\n') {
-            cout << ' ';
-        } else {
-            cout << iMemblock[j];
-        }
-        cout << ' ';
-    }
-    cout << "\n";
-    #endif
-
+    }    
     return block;
 }
+
 /* Overwrite current block with current fingerprint*/
 void writeBlock(long blockNumber) {
     input.seekp((blockNumber-1)*blockSize);
@@ -139,13 +94,6 @@ uint64_t calculateFingerprint(uint64_t currentB, uint64_t oldP) {
     cout << "new fingerprint is:                 "; util::printInt64(P);
     #endif
     
-    #ifdef assert
-    if(P >= q) {
-        cout << "Something is really really wrong. A fingerprint is greater than q." << endl;
-        exit(EXIT_FAILURE);
-    }
-    #endif
-    
     return P;
 }
 
@@ -156,7 +104,6 @@ bool checkForNoCollision() {
     input.seekg(0, ios::beg);
     //unsigned int progress = 1;
     for(unsigned long i = 0; i <= fileSize/blockSize; i++) {
-    //for(unsigned long i = 0; i <= 10; i++) {
         
         B = readBlock(i);
         P = calculateFingerprint(B, P);
@@ -165,7 +112,7 @@ bool checkForNoCollision() {
             return false;
         }
         
-        //if(i >= (fileSize/blockSize* progress/10)) {
+        //if(i >= (numberOfBlocks* progress/10)) {
         //    cout <<"\r" << progress << "0%" << flush;
         //   progress++;
         //}
@@ -175,44 +122,78 @@ bool checkForNoCollision() {
 }
 
 
-/* Builds the in-place LCE datastructure. The old text will be overwritten*/
+
+/* Builds the in-place LCE datastructure. The old text will be overwritten. */
 void buildInPlaceLCE() {
     cout << "\n--------Building in-place LCE datastructure---------\n";
-    P = seed;
     
-    unsigned int progress = 1; 
+    /*Here we save out seed in P, because it is the first fingerprint
+     We can't overwrite the first block after that, because we need the block to calculate the next fingerprint*/
+    B = seed;
+    P = calculateFingerprint(B, 0);
+    
+    /* To track progress */
+    //unsigned int progress = 1; 
+    
+    
+    
     for(unsigned long i = 1; i <= fileSize/blockSize; i++) {
         
         B = readBlock(i);
-        
         writeBlock(i);
-
         P = calculateFingerprint(B, P);
+        
         /*Here we have to save the information that B >= q.
         To do this, we set the first bit in P. It should always have been 0 before.*/
         if(B >= q) {
             P |= 0x8000000000000000ULL;
-            blocksWithSetMSB++;
         }
         
         
-        /* Track the progress */
-        if(i >= (fileSize/blockSize* progress/10)) {
-            cout <<"\r" << progress << "0%" << flush;
-            progress++;
-        }
+        ///* Track the progress */
+        //if(i >= (numberOfBlocks * progress/10U)) {
+        //    cout <<"\r" << progress << "0%" << flush;
+        //    progress++;
+        //}
     }
     /* Write the last block, which was calculated already */
     writeBlock((fileSize/blockSize)+1);
     cout << "\n--------Successfully build LCE datastructure--------\n";
-    cout << "Number of blocks above q: " << blocksWithSetMSB << "/" << numberOfBlocks << endl;
+    cout << "Number of blocks: " << numberOfBlocks << endl;
 }
+
+uint64_t* inMemoryBuildInPlaceLCE() {
+        
+    uint64_t * LCEDataStructure = new uint64_t[numberOfBlocks+1];
+    B = seed;
+    P = calculateFingerprint(B, P);
+        
+    for(unsigned long i = 1; i <= fileSize/blockSize; i++) {
+        
+        B = readBlock(i);
+        LCEDataStructure[i-1] = P;
+        P = calculateFingerprint(B, P);
+        
+        /*Here we have to save the information that B >= q.
+        To do this, we set the first bit in P. It should always have been 0 before.*/
+        if(B >= q) {
+            P |= 0x8000000000000000ULL;
+        }
+    }
+    /* Write the last block, which was calculated already */
+    LCEDataStructure[numberOfBlocks] = P;
+    cout << "\n----Successfully build LCE datastructure in Memory---\n";
+    cout << "Number of blocks: " << numberOfBlocks << endl;
+    return LCEDataStructure;
+}    
+
+
+
 
 /* This is the back up plan, in case building the in-place data structure does not work. */ 
 void safePlan() {
     cout << "dadidadida\n";
 }
-
 
 
 int main(int argc, char *argv[]) {
@@ -246,8 +227,6 @@ int main(int argc, char *argv[]) {
     
     /* Build the data structure */
     if(checkForNoCollision()) {
-        cout << "Random prime:       "; util::printInt128(q);
-        cout << "Random seed:                        "; util::printInt64(seed);
         buildInPlaceLCE();
     } else {
         safePlan();
@@ -255,7 +234,7 @@ int main(int argc, char *argv[]) {
      
     
     /* Print additional information and exit */
-    printEnd(); 
+    util::printEnd(fileSize); 
     input.close();
     return EXIT_SUCCESS;
     

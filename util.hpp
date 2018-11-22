@@ -6,8 +6,6 @@
 #include <fstream>
 
 
-using namespace std;
-
 class util{
 
 
@@ -26,12 +24,31 @@ public:
         printf("%016lX%016lX\n", numberHalf[1], numberHalf[0]);
     }
     
-    /* Calculates and prints basic information about the file */
-    static uint64_t calculateSizeOfInputFile(fstream* stream) {
+    /* Prints information about the data structure*/
+    static void printEnd(uint64_t fileSize) {
+        std::cout << fileSize << " Bytes processed" << std::endl;
+        std::cout << "\n----------------------------------------------------\n";
+        std::cout << "-----------------PROGRAM END------------------------\n";
+        std::cout << "----------------------------------------------------\n\n";
+} 
+    
+    
+    /* Returns the length of the file in bytes */
+    static uint64_t calculateSizeOfInputFile(std::fstream* stream) {
         uint64_t fileStart, fileEnd;
-        stream->seekg(0, ios::beg);
+        stream->seekg(0, std::ios::beg);
         fileStart = stream->tellg();
-        stream->seekg(0, ios::end);
+        stream->seekg(0, std::ios::end);
+        fileEnd = stream->tellg();
+        return fileEnd - fileStart;
+    }
+    
+    /* Returns the length of the file in bytes */
+    static uint64_t calculateSizeOfInputFile(std::ifstream* stream) {
+        uint64_t fileStart, fileEnd;
+        stream->seekg(0, std::ios::beg);
+        fileStart = stream->tellg();
+        stream->seekg(0, std::ios::end);
         fileEnd = stream->tellg();
         return fileEnd - fileStart;
     }
@@ -39,30 +56,30 @@ public:
     
     
     /* Checks the state flags of fstream  */
-    static void inputErrorHandling(fstream* stream) {
+    static void inputErrorHandling(std::fstream* stream) {
         if(stream->good()) {
             return;
         } else {
-            cerr << "Error in fstream\n";
+            std::cerr << "Error in fstream\n";
         }
         
         if(!stream->is_open()) {
-            cerr << "File not found\n";
+            std::cerr << "File not found\n";
             exit(-1);
         }
         
         if(stream->eof()) {
-            cout << "End of file reached\n";
+            std::cout << "End of file reached\n";
             exit(0);
         }
         
         if(stream->bad()) {
-            cerr << "Bad fstream\n";
+            std::cerr << "Bad fstream\n";
             exit(-1);
         }
         
         if(stream->fail()) {
-            cerr << "fsteam failed\n";
+            std::cerr << "fsteam failed\n";
             exit(-1);
         } 
     }
