@@ -26,15 +26,22 @@ uint64_t fileSizeInBlocks;
 
 
 
-uint64_t phiToI(uint64_t P[], unsigned__int128 q, uint64_t i, ) {
-	uint64_t fingerprintToI = 0;
-	X = P[i/8];
-	X <<= (i mod 8)*8);
-	X += getBlock(P, i) >> 64 - ((i mod 8) * 8);
-    
+uint64_t phiToI(uint64_t P[], unsigned __int128 q, uint64_t i) {
+	
+	unsigned __int128 fingerprintToI;
+	
+	if(i < 8) {
+		fingerprintToI = 0;
+	} else {
+		fingerprintToI = P[(i/8) - 1];
+	}
+	
+	int padding = (i % 8)*8;
+	fingerprintToI <<= padding;
+	fingerprintToI += ( createDataStructure::reconstructBlock(P[i], P[i-1], q) >> (64 - padding) );
 	
 	
-    return 0;
+	return (uint64_t) fingerprintToI;
 }
 
 
@@ -97,23 +104,23 @@ uint64_t randomIndex() {
 
 
 int main(int argc, char* argv[]) {
-    if (argc != 3) {
-        cout << "Usage: LCEQuery FILE_PATH NUMBER_OF_RANDOM_QUERIES\n"
+	if (argc != 3) {
+	cout << "Usage: LCEQuery FILE_PATH NUMBER_OF_RANDOM_QUERIES\n"
         << "Example: LCEQuery RKFenglish.s 5000\n";
         return EXIT_FAILURE;
     }
-    uint64_t numberOfQueries = atoi(argv[2]);
-    cout << "Number of random LCE queries: " << numberOfQueries << '\n';
+	uint64_t numberOfQueries = atoi(argv[2]);
+	cout << "Number of random LCE queries: " << numberOfQueries << '\n';
 	
 	
 	input.open(argv[1], ios::in|ios::binary);
 	util::inputErrorHandling(&input);
 	
     
-    fileSizeInByte = util::calculateSizeOfInputFile(&input);
+	fileSizeInByte = util::calculateSizeOfInputFile(&input);
 	fileSizeInBlocks = fileSizeInByte / 8;
 	cout << "File size:          " << fileSizeInByte << " byte\n";
-    cout << "File size:          " << fileSizeInBlocks      << " blocks\n";
+	cout << "File size:          " << fileSizeInBlocks      << " blocks\n";
         
 	T = new uint64_t[fileSizeInBlocks];
 	P = new uint64_t[fileSizeInBlocks];
