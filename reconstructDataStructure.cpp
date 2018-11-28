@@ -18,7 +18,7 @@ uint64_t numberOfBlocks;
 
 
 uint64_t oldP = 0; 
-uint64_t P = 0; 
+uint64_t P = 0;
 uint64_t B = 0;
 
 /* The prime used for data structure construction */

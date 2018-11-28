@@ -1,5 +1,5 @@
-#ifndef UTIL_INCLUDED   // if x.h hasn't been included yet...
-#define UTIL_INCLUDED   //   #define this so the compiler knows it has been included
+#ifndef UTIL_INCLUDED    
+#define UTIL_INCLUDED     
 #include <iostream> 
 #include <inttypes.h>
 #include <cstdio>
@@ -54,9 +54,36 @@ public:
     }
     
     
-    
     /* Checks the state flags of fstream  */
     static void inputErrorHandling(std::fstream* stream) {
+        if(stream->good()) {
+            return;
+        } else {
+            std::cerr << "Error in fstream\n";
+        }
+        
+        if(!stream->is_open()) {
+            std::cerr << "File not found\n";
+            exit(-1);
+        }
+        
+        if(stream->eof()) {
+            std::cout << "End of file reached\n";
+            exit(0);
+        }
+        
+        if(stream->bad()) {
+            std::cerr << "Bad fstream\n";
+            exit(-1);
+        }
+        
+        if(stream->fail()) {
+            std::cerr << "fsteam failed\n";
+            exit(-1);
+        } 
+    }
+	
+	static void inputErrorHandling(std::ifstream* stream) {
         if(stream->good()) {
             return;
         } else {
