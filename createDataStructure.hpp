@@ -40,6 +40,19 @@ public:
 		unsigned __int128 prime = primes[(rand() % numberOfPrimes)];
 		return prime;
 	}
+	
+	static void calculateExponents (uint64_t powArray[], unsigned __int128 prime, unsigned int size) {
+	
+		unsigned __int128 X = 2^64 % prime;
+		powArray[0] = X; 
+	
+		for(unsigned int i = 1; i < size ; i++) {
+			X = (X * X) % prime;
+			powArray[i] = (uint64_t) X;
+		}
+	}
+	
+	static uint64_t calculateBlock (uint64_t oldP, uint64_t newP, uint 
 
 
 private: 

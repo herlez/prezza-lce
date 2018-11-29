@@ -51,6 +51,16 @@ uint64_t phiIToJ(uint64_t i, uint64_t j) {
 }
 
 
+uint64_t getFingerprint(uint64_t P, unsigned __int128 q, uint64_t startIndex, uint64_t pow, uint64_t[] powArray) {
+	
+	if (i = 0) {
+		return phiToI(P, q, startIndex+2^pow);
+	} else {
+		return phiToI(P, q, startIndex+2^pow) - phiToI(P, q, startIndex-1) * powTable[pow];
+	}
+}
+
+
 
 
 
