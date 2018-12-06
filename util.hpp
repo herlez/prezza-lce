@@ -43,6 +43,19 @@ public:
         return fileEnd - fileStart;
     }
     
+    /* Returns a prime number from a precalculated set */
+    static unsigned __int128 randomPrime() {
+		
+		srand(time(0));
+		unsigned const __int128 primes[] = { 0x800000000000001dULL, 0x8000000000000063ULL, 0x800000000000007bULL, 0x8000000000000083ULL, 0x800000000000009bULL };
+		unsigned const int numberOfPrimes = 5;
+		
+		
+		unsigned __int128 prime = primes[(rand() % numberOfPrimes)];
+		return prime;
+	}
+	
+	
     /* Returns the length of the file in bytes */
     static uint64_t calculateSizeOfInputFile(std::ifstream* stream) {
         uint64_t fileStart, fileEnd;
@@ -52,6 +65,15 @@ public:
         fileEnd = stream->tellg();
         return fileEnd - fileStart;
     }
+    
+    static uint64_t randomIndex(uint64_t max) {
+		uint64_t randIndex = rand();
+		randIndex <<= 32;
+		randIndex += rand();
+	
+		randIndex = randIndex % max;
+		return randIndex;
+	}
     
     
     /* Checks the state flags of fstream  */
