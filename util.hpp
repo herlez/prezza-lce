@@ -44,7 +44,7 @@ public:
     }
     
     /* Returns a prime number from a precalculated set */
-    static unsigned __int128 randomPrime() {
+    static unsigned __int128 getLow64BitPrime() {
 		
 		srand(time(0));
 		unsigned const __int128 primes[] = { 0x800000000000001dULL, 0x8000000000000063ULL, 0x800000000000007bULL, 0x8000000000000083ULL, 0x800000000000009bULL };
