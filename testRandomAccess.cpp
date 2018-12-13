@@ -5,6 +5,8 @@
 #include "util.hpp"
 #include "createDataStructure.hpp"
 #include <sys/time.h>
+//#include <cmath> 
+//#include <ctgmath>
 
 #define consoleIO
 
@@ -70,7 +72,7 @@ int main(int argc, char *argv[]) {
 	srand(time(0));	
 	for(uint64_t i = 0; i < n; i++) {
 		rand[i] = util::randomIndex(sizeInBytes);
-	}		
+	}
 	ts2 = timestamp();
 	cout << "Time for generating random indexes was: " << ts2-ts1 << endl;
 	
@@ -78,26 +80,28 @@ int main(int argc, char *argv[]) {
 	
 	
 	/* Do random access queries on lce data structure */
+	c = 0x00;
 	ts1 = timestamp();
 	for(uint64_t i = 0; i < numberOfQueries; i++) {
-		c = createDataStructure::getChar(&dataLCE, rand[i % n]);
+		c |= createDataStructure::getChar(&dataLCE, rand[i % n]);
 	}
 	ts2 = timestamp();
-	cout << "Finished with LCE data structure RA in " << ts2 - ts1 << endl;
+	cout << c << "| Finished with LCE data structure RA in " << ts2 - ts1 << endl;
 	
 
 	
 	
 	/* Do random access queries on normal data*/
+	c = 0x00;
 	ts1 = timestamp();
 	for(uint64_t i = 0; i < numberOfQueries; i++) {
-		c = dataRaw[rand[i % n]];
+		c |= dataRaw[rand[i % n]];
 	}
 	ts2 = timestamp();
-	cout << "Finished with standard data RA in " << ts2 - ts1 << endl;
+	cout << c <<"| Finished with standard data RA in " << ts2 - ts1 << endl;
 	
 
-	cout << "Ended successfully" << c <<endl;
+	cout << "Ended successfully" <<endl;
 	return EXIT_SUCCESS;
 }
 
