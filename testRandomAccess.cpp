@@ -32,7 +32,6 @@ int main(int argc, char *argv[]) {
 	
 	ifstream inputStream (filePath, ios::in|ios::binary);
 	util::inputErrorHandling(&inputStream);
-	cout << "Got to here \n";
 	
 	
 	/* Construct data structure */
