@@ -8,25 +8,31 @@
 class createDataStructure{
 public:
 	struct lceDataStructure {
+		uint64_t numberOfBytes;
 		uint64_t numberOfBlocks;
 		__int128 prime;
 		uint64_t * fingerprints;
-		uint64_t * exponents;
+		uint64_t * powerTable;
 	} ;
 
 
 
 	/* Builds the LCE data structure from text and stores it in lceData */
-	static void buildLCEDataStructure(lceDataStructure * lceData, uint64_t text[], uint64_t numberOfBlocks) {
+	static void buildLCEDataStructure(lceDataStructure * lceData, uint64_t text[], uint64_t sizeInBytes) {
 			
 		unsigned __int128 prime = util::getLow64BitPrime();
 		
 		lceData->prime = prime;
-		lceData->numberOfBlocks = numberOfBlocks;
-		lceData->fingerprints = new uint64_t[numberOfBlocks];
-	
-	
+		lceData->numberOfBytes = sizeInBytes;
+		
+		/* Set size in Blocks and calculate number of blocks from it */
+		lceData->sizeInBlocks = sizeInBytes/8;
+		if (lceData->sizeInBytes%8 != 0) {
+			lceData->sizeInBlocks++; 
+		}
+		
 		/* Here all fingerprints are calculated */
+		lceData->fingerprints = new uint64_t[numberOfBlocks];
 		lceData->fingerprints[0] = text[0];
 		for (uint64_t i = 1; i < numberOfBlocks; i++) {
 			lceData->fingerprints[i] = calculateFingerprint(text[i], lceData->fingerprints[i-1], lceData->prime);
@@ -123,13 +129,13 @@ private:
 	/* Here we calculate all 2^b mod 64 for b = 1, 2, 4, 8, 16.. */
 	static void calculatePowers(lceDataStructure * lceData){
 		unsigned int numberOfLevels = ((int) std::log2(lceData->numberOfBlocks)) + 1;
-		lceData->exponents = new uint64_t[numberOfLevels];
+		lceData->powerTable = new uint64_t[numberOfLevels];
 		unsigned __int128 X = 2^64 % lceData->prime;
-		lceData->exponents[0] = (uint64_t) X;
+		lceData->powerTable[0] = (uint64_t) X;
 		
 		for (unsigned int i = 1; i < numberOfLevels; i++) {
 			X = (X^2) % lceData->prime;
-			lceData->exponents[i] = (uint64_t) X;
+			lceData->powerTable[i] = (uint64_t) X;
 		}
 	}
 

@@ -10,24 +10,59 @@ class lceQueries{
 public:
 
 
-	static uint64_t getFingerprint(lceDataStructure * lceData, uint64_t from, int factor) {
-	
+	static uint64_t lce(lceDataStructure * lceData, uint64_t indexI, uint64_t indexJ) {
+		
+		uint64_t lce = 0;
+		
+		for (unsigned int i = 0; i < 8; i++) {
+			
+			if( indexI + i < lceData.sizeInBytes && 
+				indexJ + i < lceData.sizeInBytes &&
+				createDataStructure.getChar(lceData, indexI + i) == createDataStructure.getChar(lceData, indexJ + j)) {
+					return i;
+			}
+		}
+		
+		/* Do exponential search to look for the first 2^k blocks with the same fingerprint */	
+		for (unsigned int exponent = 0; ; i++) {
+			//check borders
+			
+			// check
+			
+			
+		}  
+		
+		/* Do binary search on the rest
+			 
+			return 9;
+		
+	}
+
+
+
+
+	static uint64_t getFingerprint(lceDataStructure * lceData, uint64_t from, int exponent) {	
 	if (from = 0) {
-		return fingerPrintTo(lceData, to);
+		return fingerPrintTo(lceData, 2^exponent);
 	} else {
-		return fingerPrintTo(lceData, to) - fingerPrintTo(lceData, from) * powTable[pow];
+		
+		__int128 =
+		
+		
+		
+		fingerPrintTo(lceData, to) - fingerPrintTo(lceData, from) * lceData.powerTable[exponent];
 	}
 	return 0;
 	}
 
 
 
-private:	
+
+
+private:
 	
 	
 	static uint64_t fingerPrintTo(lceDataStructure * lceData, uint64_t to) {
-	
-	
 	unsigned __int128 fingerprint;
 	
 	if(to < 8) {
@@ -38,10 +73,10 @@ private:
 	}
 	
 	int padding = (to % 8 * 8);
-	fingerprint <<= 2^padding;
-	fingerprint += ( createDataStructure::getBlock(lceData, uint64_t) >> (64 - padding) );
-	fingerprint = fingerPrint % lceDataStructure.prime;
+	fingerprint <<= padding;
 	
+	fingerprint += ( createDataStructure::getBlock(lceData, to/8)  >> (64 - padding) );
+	fingerprint = fingerPrint % lceDataStructure.prime;
 	
 	return (uint64_t) fingerprint;	
 	}

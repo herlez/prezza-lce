@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
 	/* Construct data structure */
 	uint64_t sizeInBytes = util::calculateSizeOfInputFile(&inputStream);
 	uint64_t sizeInBlocks = sizeInBytes/8;
-	if ( util::calculateSizeOfInputFile(&inputStream)%8 != 0) {
+	if ( sizeInBytes%8 != 0) {
 		sizeInBlocks++; 
 	}
 	cout << "Size in bytes : "; util::printInt64(sizeInBytes);
@@ -49,7 +49,7 @@ int main(int argc, char *argv[]) {
 	createDataStructure::lceDataStructure dataLCE;
 	
 	createDataStructure::loadFile(&inputStream, dataRaw, sizeInBytes);
-	createDataStructure::buildLCEDataStructure(&dataLCE, (uint64_t*) dataRaw, sizeInBlocks);
+	createDataStructure::buildLCEDataStructure(&dataLCE, (uint64_t*) dataRaw, sizeInBytes);
 	cout << "Prime number  : "; util::printInt128(dataLCE.prime);
 	
 	
@@ -82,26 +82,44 @@ int main(int argc, char *argv[]) {
 	c = 0x00;
 	ts1 = timestamp();
 	for(uint64_t i = 0; i < numberOfQueries; i++) {
-		c |= createDataStructure::getChar(&dataLCE, rand[i % n]);
+		c = createDataStructure::getChar(&dataLCE, rand[i % n]);
 	}
 	ts2 = timestamp();
 	cout << c << "| Finished with LCE data structure RA in " << ts2 - ts1 << endl;
 	
-
 	
-	
-	/* Do random access queries on normal data*/
+	/* Do random access queries on normal data */
 	c = 0x00;
 	ts1 = timestamp();
 	for(uint64_t i = 0; i < numberOfQueries; i++) {
-		c |= dataRaw[rand[i % n]];
+		c = dataRaw[rand[i % n]];
 	}
 	ts2 = timestamp();
 	cout << c <<"| Finished with standard data RA in " << ts2 - ts1 << endl;
 	
+	
+	
+	
+	/* Do sequential access queries on lce data structure */
+	c = 0x00;
+	ts1 = timestamp();
+	for(uint64_t i = 0; i < numberOfQueries; i++) {
+		c = createDataStructure::getChar(&dataLCE, i % sizeInBytes);
+	}
+	ts2 = timestamp();
+	cout << c << "| Finished with LCE data structure RA in " << ts2 - ts1 << endl;
+
+
+	/* Do sequential access queries on normal data */
+	c = 0x00;
+	ts1 = timestamp();
+	for(uint64_t i = 0; i < numberOfQueries; i++) {
+		c = dataRaw[i % sizeInBytes];
+	}
+	ts2 = timestamp();
+	cout << c <<"| Finished with standard data RA in " << ts2 - ts1 << endl;
+
 
 	cout << "Ended successfully" <<endl;
 	return EXIT_SUCCESS;
 }
-
-
