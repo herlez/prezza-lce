@@ -1,1 +1,4 @@
-# prezza-lce
+Compile with:
+mkdir build; cd build
+cmake ..
+make
