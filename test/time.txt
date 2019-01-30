@@ -1,0 +1,1312 @@
+RESULT text=english algo=loadFile size=256 time=6.31809e-05
+RESULT text=english algo=buildDataStructure size=256 time=4.00543e-05
+RESULT text=english algo=fastLCE size=256 time=1.06724
+5682004
+RESULT text=english algo=naiveLCE size=256 time=0.0182121
+5682004
+RESULT text=english algo=RA-LCE size=256 time=1.14222
+20
+RESULT text=english algo=RA-RAW size=256 time=0.0833259
+20
+RESULT text=english algo=SA-LCE size=256 time=1.73165
+23
+RESULT text=english algo=SA-RAW size=256 time=0.583128
+23
+RESULT text=english algo=loadFile size=512 time=1.81198e-05
+RESULT text=english algo=buildDataStructure size=512 time=4.29153e-05
+RESULT text=english algo=fastLCE size=512 time=1.0885
+5747219
+RESULT text=english algo=naiveLCE size=512 time=0.018765
+5747219
+RESULT text=english algo=RA-LCE size=512 time=1.16228
+20
+RESULT text=english algo=RA-RAW size=512 time=0.0839911
+20
+RESULT text=english algo=SA-LCE size=512 time=1.73564
+23
+RESULT text=english algo=SA-RAW size=512 time=0.568569
+23
+RESULT text=english algo=loadFile size=1024 time=1.71661e-05
+RESULT text=english algo=buildDataStructure size=1024 time=3.19481e-05
+RESULT text=english algo=fastLCE size=1024 time=1.09671
+5738346
+RESULT text=english algo=naiveLCE size=1024 time=0.0188408
+5738346
+RESULT text=english algo=RA-LCE size=1024 time=1.17125
+20
+RESULT text=english algo=RA-RAW size=1024 time=0.083528
+20
+RESULT text=english algo=SA-LCE size=1024 time=1.73241
+23
+RESULT text=english algo=SA-RAW size=1024 time=0.557237
+23
+RESULT text=english algo=loadFile size=2048 time=1.69277e-05
+RESULT text=english algo=buildDataStructure size=2048 time=3.60012e-05
+RESULT text=english algo=fastLCE size=2048 time=1.11028
+5854016
+RESULT text=english algo=naiveLCE size=2048 time=0.019737
+5854016
+RESULT text=english algo=RA-LCE size=2048 time=1.17512
+20
+RESULT text=english algo=RA-RAW size=2048 time=0.0834892
+20
+RESULT text=english algo=SA-LCE size=2048 time=1.72154
+23
+RESULT text=english algo=SA-RAW size=2048 time=0.542221
+23
+RESULT text=english algo=loadFile size=4096 time=1.88351e-05
+RESULT text=english algo=buildDataStructure size=4096 time=4.91142e-05
+RESULT text=english algo=fastLCE size=4096 time=1.18696
+6605109
+RESULT text=english algo=naiveLCE size=4096 time=0.023128
+6605677
+RESULT text=english algo=RA-LCE size=4096 time=1.17719
+20
+RESULT text=english algo=RA-RAW size=4096 time=0.0831912
+20
+RESULT text=english algo=SA-LCE size=4096 time=1.71129
+23
+RESULT text=english algo=SA-RAW size=4096 time=0.530371
+23
+RESULT text=english algo=loadFile size=8192 time=1.62125e-05
+RESULT text=english algo=buildDataStructure size=8192 time=6.10352e-05
+RESULT text=english algo=fastLCE size=8192 time=1.12255
+5853747
+RESULT text=english algo=naiveLCE size=8192 time=0.0201838
+5855219
+RESULT text=english algo=RA-LCE size=8192 time=1.17828
+20
+RESULT text=english algo=RA-RAW size=8192 time=0.083497
+20
+RESULT text=english algo=SA-LCE size=8192 time=1.69801
+144
+RESULT text=english algo=SA-RAW size=8192 time=0.515788
+144
+RESULT text=english algo=loadFile size=16384 time=1.62125e-05
+RESULT text=english algo=buildDataStructure size=16384 time=8.10623e-05
+RESULT text=english algo=fastLCE size=16384 time=1.10928
+5888662
+RESULT text=english algo=naiveLCE size=16384 time=0.019393
+5890552
+RESULT text=english algo=RA-LCE size=16384 time=1.17892
+20
+RESULT text=english algo=RA-RAW size=16384 time=0.0843451
+20
+RESULT text=english algo=SA-LCE size=16384 time=1.6869
+70
+RESULT text=english algo=SA-RAW size=16384 time=0.504001
+70
+RESULT text=english algo=loadFile size=32768 time=6.29425e-05
+RESULT text=english algo=buildDataStructure size=32768 time=0.000117064
+RESULT text=english algo=fastLCE size=32768 time=1.10003
+6252337
+RESULT text=english algo=naiveLCE size=32768 time=0.0187619
+6253403
+RESULT text=english algo=RA-LCE size=32768 time=1.17896
+20
+RESULT text=english algo=RA-RAW size=32768 time=0.0873861
+20
+RESULT text=english algo=SA-LCE size=32768 time=1.67247
+48
+RESULT text=english algo=SA-RAW size=32768 time=0.48943
+48
+RESULT text=english algo=loadFile size=65536 time=7.29561e-05
+RESULT text=english algo=buildDataStructure size=65536 time=0.000203133
+RESULT text=english algo=fastLCE size=65536 time=1.09809
+6753684
+RESULT text=english algo=naiveLCE size=65536 time=0.0193641
+6754170
+RESULT text=english algo=RA-LCE size=65536 time=1.17884
+20
+RESULT text=english algo=RA-RAW size=65536 time=0.0921929
+20
+RESULT text=english algo=SA-LCE size=65536 time=1.66053
+142
+RESULT text=english algo=SA-RAW size=65536 time=0.477669
+142
+RESULT text=english algo=loadFile size=131072 time=8.51154e-05
+RESULT text=english algo=buildDataStructure size=131072 time=0.000361919
+RESULT text=english algo=fastLCE size=131072 time=1.09698
+5210410
+RESULT text=english algo=naiveLCE size=131072 time=0.0195799
+5210659
+RESULT text=english algo=RA-LCE size=131072 time=1.1791
+20
+RESULT text=english algo=RA-RAW size=131072 time=0.095547
+20
+RESULT text=english algo=SA-LCE size=131072 time=1.64585
+111
+RESULT text=english algo=SA-RAW size=131072 time=0.463091
+111
+RESULT text=english algo=loadFile size=262144 time=0.000178099
+RESULT text=english algo=buildDataStructure size=262144 time=0.000671148
+RESULT text=english algo=fastLCE size=262144 time=1.09821
+5624520
+RESULT text=english algo=naiveLCE size=262144 time=0.0196061
+5624644
+RESULT text=english algo=RA-LCE size=262144 time=1.17985
+20
+RESULT text=english algo=RA-RAW size=262144 time=0.0965209
+20
+RESULT text=english algo=SA-LCE size=262144 time=1.63438
+114
+RESULT text=english algo=SA-RAW size=262144 time=0.451334
+114
+RESULT text=english algo=loadFile size=524288 time=0.0141029
+RESULT text=english algo=buildDataStructure size=524288 time=0.00238204
+RESULT text=english algo=fastLCE size=524288 time=1.1066
+6202402
+RESULT text=english algo=naiveLCE size=524288 time=0.0234511
+6202476
+RESULT text=english algo=RA-LCE size=524288 time=1.18063
+20
+RESULT text=english algo=RA-RAW size=524288 time=0.136906
+20
+RESULT text=english algo=SA-LCE size=524288 time=1.61972
+77
+RESULT text=english algo=SA-RAW size=524288 time=0.436925
+77
+RESULT text=english algo=loadFile size=1048576 time=0.0144329
+RESULT text=english algo=buildDataStructure size=1048576 time=0.00571489
+RESULT text=english algo=fastLCE size=1048576 time=1.11223
+3733935
+RESULT text=english algo=naiveLCE size=1048576 time=0.0260561
+3734369
+RESULT text=english algo=RA-LCE size=1048576 time=1.18246
+20
+RESULT text=english algo=RA-RAW size=1048576 time=0.14378
+20
+RESULT text=english algo=SA-LCE size=1048576 time=1.60806
+133
+RESULT text=english algo=SA-RAW size=1048576 time=0.425328
+133
+RESULT text=english algo=loadFile size=2097152 time=0.015033
+RESULT text=english algo=buildDataStructure size=2097152 time=0.01142
+RESULT text=english algo=fastLCE size=2097152 time=1.11424
+5964149
+RESULT text=english algo=naiveLCE size=2097152 time=0.026962
+5964353
+RESULT text=english algo=RA-LCE size=2097152 time=1.18313
+20
+RESULT text=english algo=RA-RAW size=2097152 time=0.152459
+20
+RESULT text=english algo=SA-LCE size=2097152 time=1.59381
+73
+RESULT text=english algo=SA-RAW size=2097152 time=0.411142
+73
+RESULT text=english algo=loadFile size=4194304 time=0.00480008
+RESULT text=english algo=buildDataStructure size=4194304 time=0.0131931
+RESULT text=english algo=fastLCE size=4194304 time=1.12327
+3131698
+RESULT text=english algo=naiveLCE size=4194304 time=0.030555
+3131856
+RESULT text=english algo=RA-LCE size=4194304 time=1.20326
+20
+RESULT text=english algo=RA-RAW size=4194304 time=0.183605
+20
+RESULT text=english algo=SA-LCE size=4194304 time=1.58307
+139
+RESULT text=english algo=SA-RAW size=4194304 time=0.400086
+139
+RESULT text=english algo=loadFile size=8388608 time=0.0179689
+RESULT text=english algo=buildDataStructure size=8388608 time=0.0253789
+RESULT text=english algo=fastLCE size=8388608 time=1.27271
+780596
+RESULT text=english algo=naiveLCE size=8388608 time=0.0857849
+780746
+RESULT text=english algo=RA-LCE size=8388608 time=2.26732
+20
+RESULT text=english algo=RA-RAW size=8388608 time=0.705424
+20
+RESULT text=english algo=SA-LCE size=8388608 time=1.56967
+97
+RESULT text=english algo=SA-RAW size=8388608 time=0.386985
+97
+RESULT text=english algo=loadFile size=16777216 time=0.00968289
+RESULT text=english algo=buildDataStructure size=16777216 time=0.042047
+RESULT text=english algo=fastLCE size=16777216 time=1.60862
+778889
+RESULT text=english algo=naiveLCE size=16777216 time=0.096427
+779031
+RESULT text=english algo=RA-LCE size=16777216 time=2.82755
+20
+RESULT text=english algo=RA-RAW size=16777216 time=0.776542
+20
+RESULT text=english algo=SA-LCE size=16777216 time=1.56075
+119
+RESULT text=english algo=SA-RAW size=16777216 time=0.378121
+119
+RESULT text=english algo=loadFile size=33554432 time=0.0301061
+RESULT text=english algo=buildDataStructure size=33554432 time=0.07798
+RESULT text=english algo=fastLCE size=33554432 time=1.79421
+770764
+RESULT text=english algo=naiveLCE size=33554432 time=0.103902
+770897
+RESULT text=english algo=RA-LCE size=33554432 time=3.07627
+20
+RESULT text=english algo=RA-RAW size=33554432 time=0.819138
+20
+RESULT text=english algo=SA-LCE size=33554432 time=1.55216
+24
+RESULT text=english algo=SA-RAW size=33554432 time=0.369421
+24
+RESULT text=english algo=loadFile size=67108864 time=0.0421021
+RESULT text=english algo=buildDataStructure size=67108864 time=0.159322
+RESULT text=english algo=fastLCE size=67108864 time=1.92928
+763765
+RESULT text=english algo=naiveLCE size=67108864 time=0.122711
+763871
+RESULT text=english algo=RA-LCE size=67108864 time=3.26876
+20
+RESULT text=english algo=RA-RAW size=67108864 time=0.84339
+20
+RESULT text=english algo=SA-LCE size=67108864 time=1.55236
+51
+RESULT text=english algo=SA-RAW size=67108864 time=0.369464
+51
+RESULT text=english algo=loadFile size=134217728 time=0.050462
+RESULT text=english algo=buildDataStructure size=134217728 time=0.313425
+RESULT text=english algo=fastLCE size=134217728 time=2.0393
+759717
+RESULT text=english algo=naiveLCE size=134217728 time=0.126045
+759788
+RESULT text=english algo=RA-LCE size=134217728 time=3.97867
+20
+RESULT text=english algo=RA-RAW size=134217728 time=0.807855
+20
+RESULT text=english algo=SA-LCE size=134217728 time=1.55208
+73
+RESULT text=english algo=SA-RAW size=134217728 time=0.369446
+73
+RESULT text=english algo=loadFile size=268435456 time=0.114891
+RESULT text=english algo=buildDataStructure size=268435456 time=0.62503
+RESULT text=english algo=fastLCE size=268435456 time=1.84147
+754934
+RESULT text=english algo=naiveLCE size=268435456 time=0.114095
+754992
+RESULT text=english algo=RA-LCE size=268435456 time=3.06339
+20
+RESULT text=english algo=RA-RAW size=268435456 time=0.860986
+20
+RESULT text=english algo=SA-LCE size=268435456 time=1.55207
+73
+RESULT text=english algo=SA-RAW size=268435456 time=0.369468
+73
+RESULT text=english algo=loadFile size=536870912 time=0.203966
+RESULT text=english algo=buildDataStructure size=536870912 time=1.24848
+RESULT text=english algo=fastLCE size=536870912 time=1.97834
+748264
+RESULT text=english algo=naiveLCE size=536870912 time=0.116803
+748299
+RESULT text=english algo=RA-LCE size=536870912 time=3.05744
+20
+RESULT text=english algo=RA-RAW size=536870912 time=0.917763
+20
+RESULT text=english algo=SA-LCE size=536870912 time=1.55219
+73
+RESULT text=english algo=SA-RAW size=536870912 time=0.369452
+73
+RESULT text=english algo=loadFile size=1073741824 time=0.377709
+RESULT text=english algo=buildDataStructure size=1073741824 time=2.50263
+RESULT text=english algo=fastLCE size=1073741824 time=2.13422
+750800
+RESULT text=english algo=naiveLCE size=1073741824 time=0.148737
+750843
+RESULT text=english algo=RA-LCE size=1073741824 time=3.40322
+20
+RESULT text=english algo=RA-RAW size=1073741824 time=1.10731
+20
+RESULT text=english algo=SA-LCE size=1073741824 time=1.5522
+73
+RESULT text=english algo=SA-RAW size=1073741824 time=0.369462
+73
+RESULT text=english algo=loadFile size=2147483648 time=0.738694
+RESULT text=english algo=buildDataStructure size=2147483648 time=5.00226
+RESULT text=english algo=fastLCE size=2147483648 time=2.15393
+752103
+RESULT text=english algo=naiveLCE size=2147483648 time=0.186762
+752149
+RESULT text=english algo=RA-LCE size=2147483648 time=4.09523
+20
+RESULT text=english algo=RA-RAW size=2147483648 time=1.95372
+20
+RESULT text=english algo=SA-LCE size=2147483648 time=1.55222
+73
+RESULT text=english algo=SA-RAW size=2147483648 time=0.369462
+73
+RESULT text=english algo=loadFile size=2210395553 time=0.651856
+RESULT text=english algo=buildDataStructure size=2210395553 time=5.12686
+RESULT text=english algo=fastLCE size=2210395553 time=2.31048
+752877
+RESULT text=english algo=naiveLCE size=2210395553 time=0.19017
+752919
+RESULT text=english algo=RA-LCE size=2210395553 time=4.34881
+20
+RESULT text=english algo=RA-RAW size=2210395553 time=1.9617
+20
+RESULT text=english algo=SA-LCE size=2210395553 time=1.55218
+73
+RESULT text=english algo=SA-RAW size=2210395553 time=0.36939
+73
+RESULT text=proteins algo=loadFile size=256 time=5.29289e-05
+RESULT text=proteins algo=buildDataStructure size=256 time=2.98023e-05
+RESULT text=proteins algo=fastLCE size=256 time=1.06597
+5661342
+RESULT text=proteins algo=naiveLCE size=256 time=0.018388
+5661342
+RESULT text=proteins algo=RA-LCE size=256 time=1.14525
+20
+RESULT text=proteins algo=RA-RAW size=256 time=0.0831702
+20
+RESULT text=proteins algo=SA-LCE size=256 time=1.73488
+23
+RESULT text=proteins algo=SA-RAW size=256 time=0.583311
+23
+RESULT text=proteins algo=loadFile size=512 time=1.69277e-05
+RESULT text=proteins algo=buildDataStructure size=512 time=3.50475e-05
+RESULT text=proteins algo=fastLCE size=512 time=1.07889
+5663317
+RESULT text=proteins algo=naiveLCE size=512 time=0.0181971
+5663317
+RESULT text=proteins algo=RA-LCE size=512 time=1.16319
+20
+RESULT text=proteins algo=RA-RAW size=512 time=0.0826292
+20
+RESULT text=proteins algo=SA-LCE size=512 time=1.73725
+23
+RESULT text=proteins algo=SA-RAW size=512 time=0.568606
+23
+RESULT text=proteins algo=loadFile size=1024 time=1.4782e-05
+RESULT text=proteins algo=buildDataStructure size=1024 time=3.40939e-05
+RESULT text=proteins algo=fastLCE size=1024 time=1.07321
+5660978
+RESULT text=proteins algo=naiveLCE size=1024 time=0.017621
+5660978
+RESULT text=proteins algo=RA-LCE size=1024 time=1.17235
+20
+RESULT text=proteins algo=RA-RAW size=1024 time=0.082865
+20
+RESULT text=proteins algo=SA-LCE size=1024 time=1.73367
+23
+RESULT text=proteins algo=SA-RAW size=1024 time=0.556838
+23
+RESULT text=proteins algo=loadFile size=2048 time=1.5974e-05
+RESULT text=proteins algo=buildDataStructure size=2048 time=3.40939e-05
+RESULT text=proteins algo=fastLCE size=2048 time=1.08438
+5932988
+RESULT text=proteins algo=naiveLCE size=2048 time=0.018028
+5932988
+RESULT text=proteins algo=RA-LCE size=2048 time=1.17673
+20
+RESULT text=proteins algo=RA-RAW size=2048 time=0.0843539
+20
+RESULT text=proteins algo=SA-LCE size=2048 time=1.72891
+23
+RESULT text=proteins algo=SA-RAW size=2048 time=0.542367
+23
+RESULT text=proteins algo=loadFile size=4096 time=1.50204e-05
+RESULT text=proteins algo=buildDataStructure size=4096 time=3.60012e-05
+RESULT text=proteins algo=fastLCE size=4096 time=1.09938
+6031130
+RESULT text=proteins algo=naiveLCE size=4096 time=0.0180659
+6031130
+RESULT text=proteins algo=RA-LCE size=4096 time=1.1778
+20
+RESULT text=proteins algo=RA-RAW size=4096 time=0.0831239
+20
+RESULT text=proteins algo=SA-LCE size=4096 time=1.71237
+23
+RESULT text=proteins algo=SA-RAW size=4096 time=0.530438
+23
+RESULT text=proteins algo=loadFile size=8192 time=1.71661e-05
+RESULT text=proteins algo=buildDataStructure size=8192 time=4.60148e-05
+RESULT text=proteins algo=fastLCE size=8192 time=1.09369
+6094558
+RESULT text=proteins algo=naiveLCE size=8192 time=0.0185339
+6094558
+RESULT text=proteins algo=RA-LCE size=8192 time=1.17921
+20
+RESULT text=proteins algo=RA-RAW size=8192 time=0.0833342
+20
+RESULT text=proteins algo=SA-LCE size=8192 time=1.6988
+31
+RESULT text=proteins algo=SA-RAW size=8192 time=0.51581
+31
+RESULT text=proteins algo=loadFile size=16384 time=1.69277e-05
+RESULT text=proteins algo=buildDataStructure size=16384 time=7.00951e-05
+RESULT text=proteins algo=fastLCE size=16384 time=1.09698
+6003326
+RESULT text=proteins algo=naiveLCE size=16384 time=0.0181808
+6003326
+RESULT text=proteins algo=RA-LCE size=16384 time=1.179
+20
+RESULT text=proteins algo=RA-RAW size=16384 time=0.0843089
+20
+RESULT text=proteins algo=SA-LCE size=16384 time=1.68701
+33
+RESULT text=proteins algo=SA-RAW size=16384 time=0.504053
+33
+RESULT text=proteins algo=loadFile size=32768 time=6.58035e-05
+RESULT text=proteins algo=buildDataStructure size=32768 time=0.000105143
+RESULT text=proteins algo=fastLCE size=32768 time=1.08369
+5761356
+RESULT text=proteins algo=naiveLCE size=32768 time=0.0182512
+5761356
+RESULT text=proteins algo=RA-LCE size=32768 time=1.17865
+20
+RESULT text=proteins algo=RA-RAW size=32768 time=0.0873661
+20
+RESULT text=proteins algo=SA-LCE size=32768 time=1.67167
+109
+RESULT text=proteins algo=SA-RAW size=32768 time=0.489421
+109
+RESULT text=proteins algo=loadFile size=65536 time=7.31945e-05
+RESULT text=proteins algo=buildDataStructure size=65536 time=0.000191927
+RESULT text=proteins algo=fastLCE size=65536 time=1.08376
+5392584
+RESULT text=proteins algo=naiveLCE size=65536 time=0.018667
+5392584
+RESULT text=proteins algo=RA-LCE size=65536 time=1.17904
+20
+RESULT text=proteins algo=RA-RAW size=65536 time=0.092402
+20
+RESULT text=proteins algo=SA-LCE size=65536 time=1.66005
+103
+RESULT text=proteins algo=SA-RAW size=65536 time=0.477691
+103
+RESULT text=proteins algo=loadFile size=131072 time=9.20296e-05
+RESULT text=proteins algo=buildDataStructure size=131072 time=0.000356197
+RESULT text=proteins algo=fastLCE size=131072 time=1.08098
+6015032
+RESULT text=proteins algo=naiveLCE size=131072 time=0.0188291
+6015032
+RESULT text=proteins algo=RA-LCE size=131072 time=1.17952
+20
+RESULT text=proteins algo=RA-RAW size=131072 time=0.0951669
+20
+RESULT text=proteins algo=SA-LCE size=131072 time=1.6455
+48
+RESULT text=proteins algo=SA-RAW size=131072 time=0.463133
+48
+RESULT text=proteins algo=loadFile size=262144 time=0.00010705
+RESULT text=proteins algo=buildDataStructure size=262144 time=0.000678062
+RESULT text=proteins algo=fastLCE size=262144 time=1.08711
+5299882
+RESULT text=proteins algo=naiveLCE size=262144 time=0.0191829
+5299882
+RESULT text=proteins algo=RA-LCE size=262144 time=1.17934
+20
+RESULT text=proteins algo=RA-RAW size=262144 time=0.0973129
+20
+RESULT text=proteins algo=SA-LCE size=262144 time=1.63347
+92
+RESULT text=proteins algo=SA-RAW size=262144 time=0.451422
+92
+RESULT text=proteins algo=loadFile size=524288 time=0.0140111
+RESULT text=proteins algo=buildDataStructure size=524288 time=0.00177312
+RESULT text=proteins algo=fastLCE size=524288 time=1.19583
+5128820
+RESULT text=proteins algo=naiveLCE size=524288 time=0.0227752
+5128820
+RESULT text=proteins algo=RA-LCE size=524288 time=1.86854
+20
+RESULT text=proteins algo=RA-RAW size=524288 time=0.17491
+20
+RESULT text=proteins algo=SA-LCE size=524288 time=1.61975
+115
+RESULT text=proteins algo=SA-RAW size=524288 time=0.43696
+115
+RESULT text=proteins algo=loadFile size=1048576 time=0.014276
+RESULT text=proteins algo=buildDataStructure size=1048576 time=0.00622511
+RESULT text=proteins algo=fastLCE size=1048576 time=1.32703
+5786254
+RESULT text=proteins algo=naiveLCE size=1048576 time=0.059248
+5786254
+RESULT text=proteins algo=RA-LCE size=1048576 time=2.08861
+20
+RESULT text=proteins algo=RA-RAW size=1048576 time=0.381913
+20
+RESULT text=proteins algo=SA-LCE size=1048576 time=1.60817
+98
+RESULT text=proteins algo=SA-RAW size=1048576 time=0.425285
+98
+RESULT text=proteins algo=loadFile size=2097152 time=0.0146749
+RESULT text=proteins algo=buildDataStructure size=2097152 time=0.0114052
+RESULT text=proteins algo=fastLCE size=2097152 time=1.53393
+10511657
+RESULT text=proteins algo=naiveLCE size=2097152 time=0.0716901
+10511657
+RESULT text=proteins algo=RA-LCE size=2097152 time=2.52859
+20
+RESULT text=proteins algo=RA-RAW size=2097152 time=0.638546
+20
+RESULT text=proteins algo=SA-LCE size=2097152 time=1.59396
+104
+RESULT text=proteins algo=SA-RAW size=2097152 time=0.411066
+104
+RESULT text=proteins algo=loadFile size=4194304 time=0.015105
+RESULT text=proteins algo=buildDataStructure size=4194304 time=0.0154672
+RESULT text=proteins algo=fastLCE size=4194304 time=1.61398
+654378
+RESULT text=proteins algo=naiveLCE size=4194304 time=0.089606
+654378
+RESULT text=proteins algo=RA-LCE size=4194304 time=2.86546
+20
+RESULT text=proteins algo=RA-RAW size=4194304 time=0.648243
+20
+RESULT text=proteins algo=SA-LCE size=4194304 time=1.58292
+45
+RESULT text=proteins algo=SA-RAW size=4194304 time=0.400067
+45
+RESULT text=proteins algo=loadFile size=8388608 time=0.0169899
+RESULT text=proteins algo=buildDataStructure size=8388608 time=0.0244238
+RESULT text=proteins algo=fastLCE size=8388608 time=1.60056
+647565
+RESULT text=proteins algo=naiveLCE size=8388608 time=0.113161
+647565
+RESULT text=proteins algo=RA-LCE size=8388608 time=2.76141
+20
+RESULT text=proteins algo=RA-RAW size=8388608 time=0.742832
+20
+RESULT text=proteins algo=SA-LCE size=8388608 time=1.56971
+93
+RESULT text=proteins algo=SA-RAW size=8388608 time=0.38697
+93
+RESULT text=proteins algo=loadFile size=16777216 time=0.0186932
+RESULT text=proteins algo=buildDataStructure size=16777216 time=0.044785
+RESULT text=proteins algo=fastLCE size=16777216 time=1.79927
+644912
+RESULT text=proteins algo=naiveLCE size=16777216 time=0.102572
+644912
+RESULT text=proteins algo=RA-LCE size=16777216 time=2.82737
+20
+RESULT text=proteins algo=RA-RAW size=16777216 time=0.81916
+20
+RESULT text=proteins algo=SA-LCE size=16777216 time=1.56096
+48
+RESULT text=proteins algo=SA-RAW size=16777216 time=0.378099
+48
+RESULT text=proteins algo=loadFile size=33554432 time=0.0308039
+RESULT text=proteins algo=buildDataStructure size=33554432 time=0.080565
+RESULT text=proteins algo=fastLCE size=33554432 time=1.75494
+630724
+RESULT text=proteins algo=naiveLCE size=33554432 time=0.120034
+630724
+RESULT text=proteins algo=RA-LCE size=33554432 time=3.05012
+20
+RESULT text=proteins algo=RA-RAW size=33554432 time=0.834369
+20
+RESULT text=proteins algo=SA-LCE size=33554432 time=1.55216
+39
+RESULT text=proteins algo=SA-RAW size=33554432 time=0.369463
+39
+RESULT text=proteins algo=loadFile size=67108864 time=0.042388
+RESULT text=proteins algo=buildDataStructure size=67108864 time=0.15753
+RESULT text=proteins algo=fastLCE size=67108864 time=1.96296
+641596
+RESULT text=proteins algo=naiveLCE size=67108864 time=0.109572
+641596
+RESULT text=proteins algo=RA-LCE size=67108864 time=3.27799
+20
+RESULT text=proteins algo=RA-RAW size=67108864 time=0.849658
+20
+RESULT text=proteins algo=SA-LCE size=67108864 time=1.55211
+35
+RESULT text=proteins algo=SA-RAW size=67108864 time=0.369441
+35
+RESULT text=proteins algo=loadFile size=134217728 time=0.0642459
+RESULT text=proteins algo=buildDataStructure size=134217728 time=0.31132
+RESULT text=proteins algo=fastLCE size=134217728 time=2.00988
+634141
+RESULT text=proteins algo=naiveLCE size=134217728 time=0.110014
+634141
+RESULT text=proteins algo=RA-LCE size=134217728 time=4.76283
+20
+RESULT text=proteins algo=RA-RAW size=134217728 time=0.844601
+20
+RESULT text=proteins algo=SA-LCE size=134217728 time=1.55204
+104
+RESULT text=proteins algo=SA-RAW size=134217728 time=0.369394
+104
+RESULT text=proteins algo=loadFile size=268435456 time=0.110579
+RESULT text=proteins algo=buildDataStructure size=268435456 time=0.621686
+RESULT text=proteins algo=fastLCE size=268435456 time=2.05292
+623307
+RESULT text=proteins algo=naiveLCE size=268435456 time=0.128096
+623307
+RESULT text=proteins algo=RA-LCE size=268435456 time=3.36942
+20
+RESULT text=proteins algo=RA-RAW size=268435456 time=0.901672
+20
+RESULT text=proteins algo=SA-LCE size=268435456 time=1.5521
+104
+RESULT text=proteins algo=SA-RAW size=268435456 time=0.369518
+104
+RESULT text=proteins algo=loadFile size=536870912 time=0.202041
+RESULT text=proteins algo=buildDataStructure size=536870912 time=1.24553
+RESULT text=proteins algo=fastLCE size=536870912 time=2.09075
+620607
+RESULT text=proteins algo=naiveLCE size=536870912 time=0.133647
+620607
+RESULT text=proteins algo=RA-LCE size=536870912 time=3.48409
+20
+RESULT text=proteins algo=RA-RAW size=536870912 time=0.96038
+20
+RESULT text=proteins algo=SA-LCE size=536870912 time=1.55205
+104
+RESULT text=proteins algo=SA-RAW size=536870912 time=0.369414
+104
+RESULT text=proteins algo=loadFile size=1073741824 time=0.37769
+RESULT text=proteins algo=buildDataStructure size=1073741824 time=2.50269
+RESULT text=proteins algo=fastLCE size=1073741824 time=2.08884
+625362
+RESULT text=proteins algo=naiveLCE size=1073741824 time=0.139291
+625362
+RESULT text=proteins algo=RA-LCE size=1073741824 time=3.53927
+20
+RESULT text=proteins algo=RA-RAW size=1073741824 time=1.00282
+20
+RESULT text=proteins algo=SA-LCE size=1073741824 time=1.55233
+104
+RESULT text=proteins algo=SA-RAW size=1073741824 time=0.369471
+104
+RESULT text=proteins algo=loadFile size=1184051855 time=0.37054
+RESULT text=proteins algo=buildDataStructure size=1184051855 time=2.74787
+RESULT text=proteins algo=fastLCE size=1184051855 time=2.12049
+625829
+RESULT text=proteins algo=naiveLCE size=1184051855 time=0.159556
+625829
+RESULT text=proteins algo=RA-LCE size=1184051855 time=3.49096
+20
+RESULT text=proteins algo=RA-RAW size=1184051855 time=1.22033
+20
+RESULT text=proteins algo=SA-LCE size=1184051855 time=1.55223
+104
+RESULT text=proteins algo=SA-RAW size=1184051855 time=0.369433
+104
+RESULT text=dna algo=loadFile size=256 time=5.60284e-05
+RESULT text=dna algo=buildDataStructure size=256 time=3.00407e-05
+RESULT text=dna algo=fastLCE size=256 time=1.47974
+8581916
+RESULT text=dna algo=naiveLCE size=256 time=0.048156
+8581916
+RESULT text=dna algo=RA-LCE size=256 time=1.14229
+20
+RESULT text=dna algo=RA-RAW size=256 time=0.083204
+20
+RESULT text=dna algo=SA-LCE size=256 time=1.73083
+41
+RESULT text=dna algo=SA-RAW size=256 time=0.58318
+41
+RESULT text=dna algo=loadFile size=512 time=1.5974e-05
+RESULT text=dna algo=buildDataStructure size=512 time=3.19481e-05
+RESULT text=dna algo=fastLCE size=512 time=1.51821
+8728806
+RESULT text=dna algo=naiveLCE size=512 time=0.0499721
+8728806
+RESULT text=dna algo=RA-LCE size=512 time=1.16313
+20
+RESULT text=dna algo=RA-RAW size=512 time=0.083895
+20
+RESULT text=dna algo=SA-LCE size=512 time=1.73632
+41
+RESULT text=dna algo=SA-RAW size=512 time=0.569187
+41
+RESULT text=dna algo=loadFile size=1024 time=1.5974e-05
+RESULT text=dna algo=buildDataStructure size=1024 time=3.38554e-05
+RESULT text=dna algo=fastLCE size=1024 time=1.78658
+10473185
+RESULT text=dna algo=naiveLCE size=1024 time=0.0641501
+10473185
+RESULT text=dna algo=RA-LCE size=1024 time=1.17053
+20
+RESULT text=dna algo=RA-RAW size=1024 time=0.084028
+20
+RESULT text=dna algo=SA-LCE size=1024 time=1.7316
+41
+RESULT text=dna algo=SA-RAW size=1024 time=0.556766
+41
+RESULT text=dna algo=loadFile size=2048 time=1.50204e-05
+RESULT text=dna algo=buildDataStructure size=2048 time=3.38554e-05
+RESULT text=dna algo=fastLCE size=2048 time=1.59808
+9254507
+RESULT text=dna algo=naiveLCE size=2048 time=0.0533741
+9254507
+RESULT text=dna algo=RA-LCE size=2048 time=1.17462
+20
+RESULT text=dna algo=RA-RAW size=2048 time=0.0835381
+20
+RESULT text=dna algo=SA-LCE size=2048 time=1.72088
+41
+RESULT text=dna algo=SA-RAW size=2048 time=0.542177
+41
+RESULT text=dna algo=loadFile size=4096 time=1.69277e-05
+RESULT text=dna algo=buildDataStructure size=4096 time=4.19617e-05
+RESULT text=dna algo=fastLCE size=4096 time=1.51003
+8670815
+RESULT text=dna algo=naiveLCE size=4096 time=0.0483851
+8670815
+RESULT text=dna algo=RA-LCE size=4096 time=1.17617
+20
+RESULT text=dna algo=RA-RAW size=4096 time=0.083174
+20
+RESULT text=dna algo=SA-LCE size=4096 time=1.7098
+41
+RESULT text=dna algo=SA-RAW size=4096 time=0.530352
+41
+RESULT text=dna algo=loadFile size=8192 time=1.62125e-05
+RESULT text=dna algo=buildDataStructure size=8192 time=4.91142e-05
+RESULT text=dna algo=fastLCE size=8192 time=1.48774
+8617278
+RESULT text=dna algo=naiveLCE size=8192 time=0.0469849
+8617278
+RESULT text=dna algo=RA-LCE size=8192 time=1.17756
+20
+RESULT text=dna algo=RA-RAW size=8192 time=0.0834692
+20
+RESULT text=dna algo=SA-LCE size=8192 time=1.69738
+39
+RESULT text=dna algo=SA-RAW size=8192 time=0.515775
+39
+RESULT text=dna algo=loadFile size=16384 time=1.5974e-05
+RESULT text=dna algo=buildDataStructure size=16384 time=6.60419e-05
+RESULT text=dna algo=fastLCE size=16384 time=1.48047
+8525087
+RESULT text=dna algo=naiveLCE size=16384 time=0.0463262
+8525087
+RESULT text=dna algo=RA-LCE size=16384 time=1.17878
+20
+RESULT text=dna algo=RA-RAW size=16384 time=0.0845561
+20
+RESULT text=dna algo=SA-LCE size=16384 time=1.68667
+43
+RESULT text=dna algo=SA-RAW size=16384 time=0.504012
+43
+RESULT text=dna algo=loadFile size=32768 time=6.91414e-05
+RESULT text=dna algo=buildDataStructure size=32768 time=0.000104904
+RESULT text=dna algo=fastLCE size=32768 time=1.49085
+8446460
+RESULT text=dna algo=naiveLCE size=32768 time=0.0466142
+8446460
+RESULT text=dna algo=RA-LCE size=32768 time=1.17874
+20
+RESULT text=dna algo=RA-RAW size=32768 time=0.0873139
+20
+RESULT text=dna algo=SA-LCE size=32768 time=1.67275
+24
+RESULT text=dna algo=SA-RAW size=32768 time=0.489433
+24
+RESULT text=dna algo=loadFile size=65536 time=8.39233e-05
+RESULT text=dna algo=buildDataStructure size=65536 time=0.000189066
+RESULT text=dna algo=fastLCE size=65536 time=1.47776
+8209270
+RESULT text=dna algo=naiveLCE size=65536 time=0.0472441
+8209270
+RESULT text=dna algo=RA-LCE size=65536 time=1.17954
+20
+RESULT text=dna algo=RA-RAW size=65536 time=0.093544
+20
+RESULT text=dna algo=SA-LCE size=65536 time=1.66064
+39
+RESULT text=dna algo=SA-RAW size=65536 time=0.477857
+39
+RESULT text=dna algo=loadFile size=131072 time=9.20296e-05
+RESULT text=dna algo=buildDataStructure size=131072 time=0.000355005
+RESULT text=dna algo=fastLCE size=131072 time=1.48647
+7529248
+RESULT text=dna algo=naiveLCE size=131072 time=0.047576
+7529248
+RESULT text=dna algo=RA-LCE size=131072 time=1.18036
+20
+RESULT text=dna algo=RA-RAW size=131072 time=0.0946231
+20
+RESULT text=dna algo=SA-LCE size=131072 time=1.64651
+22
+RESULT text=dna algo=SA-RAW size=131072 time=0.46336
+22
+RESULT text=dna algo=loadFile size=262144 time=0.000120878
+RESULT text=dna algo=buildDataStructure size=262144 time=0.000699997
+RESULT text=dna algo=fastLCE size=262144 time=1.55418
+8204934
+RESULT text=dna algo=naiveLCE size=262144 time=0.0483088
+8204934
+RESULT text=dna algo=RA-LCE size=262144 time=1.18056
+20
+RESULT text=dna algo=RA-RAW size=262144 time=0.106992
+20
+RESULT text=dna algo=SA-LCE size=262144 time=1.63347
+107
+RESULT text=dna algo=SA-RAW size=262144 time=0.451628
+107
+RESULT text=dna algo=loadFile size=524288 time=0.014019
+RESULT text=dna algo=buildDataStructure size=524288 time=0.00174499
+RESULT text=dna algo=fastLCE size=524288 time=1.48646
+9500019
+RESULT text=dna algo=naiveLCE size=524288 time=0.0508571
+9500019
+RESULT text=dna algo=RA-LCE size=524288 time=1.18907
+20
+RESULT text=dna algo=RA-RAW size=524288 time=0.137559
+20
+RESULT text=dna algo=SA-LCE size=524288 time=1.61988
+50
+RESULT text=dna algo=SA-RAW size=524288 time=0.437112
+50
+RESULT text=dna algo=loadFile size=1048576 time=0.0142021
+RESULT text=dna algo=buildDataStructure size=1048576 time=0.00625205
+RESULT text=dna algo=fastLCE size=1048576 time=1.55344
+9138172
+RESULT text=dna algo=naiveLCE size=1048576 time=0.0529521
+9138172
+RESULT text=dna algo=RA-LCE size=1048576 time=1.20589
+20
+RESULT text=dna algo=RA-RAW size=1048576 time=0.149512
+20
+RESULT text=dna algo=SA-LCE size=1048576 time=1.60841
+20
+RESULT text=dna algo=SA-RAW size=1048576 time=0.425436
+20
+RESULT text=dna algo=loadFile size=2097152 time=0.0148292
+RESULT text=dna algo=buildDataStructure size=2097152 time=0.0117819
+RESULT text=dna algo=fastLCE size=2097152 time=1.55545
+7505284
+RESULT text=dna algo=naiveLCE size=2097152 time=0.0564921
+7505284
+RESULT text=dna algo=RA-LCE size=2097152 time=1.18507
+20
+RESULT text=dna algo=RA-RAW size=2097152 time=0.183542
+20
+RESULT text=dna algo=SA-LCE size=2097152 time=1.59755
+97
+RESULT text=dna algo=SA-RAW size=2097152 time=0.412346
+97
+RESULT text=dna algo=loadFile size=4194304 time=0.0152788
+RESULT text=dna algo=buildDataStructure size=4194304 time=0.015806
+RESULT text=dna algo=fastLCE size=4194304 time=1.54431
+12645515
+RESULT text=dna algo=naiveLCE size=4194304 time=0.0657129
+12645515
+RESULT text=dna algo=RA-LCE size=4194304 time=1.46566
+20
+RESULT text=dna algo=RA-RAW size=4194304 time=0.295042
+20
+RESULT text=dna algo=SA-LCE size=4194304 time=1.58317
+41
+RESULT text=dna algo=SA-RAW size=4194304 time=0.400365
+41
+RESULT text=dna algo=loadFile size=8388608 time=0.00608897
+RESULT text=dna algo=buildDataStructure size=8388608 time=0.0228908
+RESULT text=dna algo=fastLCE size=8388608 time=1.72818
+14085482
+RESULT text=dna algo=naiveLCE size=8388608 time=0.113235
+14085482
+RESULT text=dna algo=RA-LCE size=8388608 time=1.99483
+20
+RESULT text=dna algo=RA-RAW size=8388608 time=0.650113
+20
+RESULT text=dna algo=SA-LCE size=8388608 time=1.56994
+114
+RESULT text=dna algo=SA-RAW size=8388608 time=0.387257
+114
+RESULT text=dna algo=loadFile size=16777216 time=0.0191109
+RESULT text=dna algo=buildDataStructure size=16777216 time=0.043916
+RESULT text=dna algo=fastLCE size=16777216 time=2.0646
+20005881
+RESULT text=dna algo=naiveLCE size=16777216 time=0.140262
+20005881
+RESULT text=dna algo=RA-LCE size=16777216 time=2.83953
+20
+RESULT text=dna algo=RA-RAW size=16777216 time=0.721806
+20
+RESULT text=dna algo=SA-LCE size=16777216 time=1.56174
+29
+RESULT text=dna algo=SA-RAW size=16777216 time=0.378715
+29
+RESULT text=dna algo=loadFile size=33554432 time=0.032198
+RESULT text=dna algo=buildDataStructure size=33554432 time=0.0784621
+RESULT text=dna algo=fastLCE size=33554432 time=2.23939
+3483837
+RESULT text=dna algo=naiveLCE size=33554432 time=0.146955
+3483837
+RESULT text=dna algo=RA-LCE size=33554432 time=3.19245
+20
+RESULT text=dna algo=RA-RAW size=33554432 time=0.825585
+20
+RESULT text=dna algo=SA-LCE size=33554432 time=1.55233
+109
+RESULT text=dna algo=SA-RAW size=33554432 time=0.369763
+109
+RESULT text=dna algo=loadFile size=67108864 time=0.0401611
+RESULT text=dna algo=buildDataStructure size=67108864 time=0.156949
+RESULT text=dna algo=fastLCE size=67108864 time=2.29852
+3513287
+RESULT text=dna algo=naiveLCE size=67108864 time=0.150522
+3513287
+RESULT text=dna algo=RA-LCE size=67108864 time=3.04209
+20
+RESULT text=dna algo=RA-RAW size=67108864 time=0.845871
+20
+RESULT text=dna algo=SA-LCE size=67108864 time=1.55263
+31
+RESULT text=dna algo=SA-RAW size=67108864 time=0.369641
+31
+RESULT text=dna algo=loadFile size=134217728 time=0.0666449
+RESULT text=dna algo=buildDataStructure size=134217728 time=0.312857
+RESULT text=dna algo=fastLCE size=134217728 time=2.41181
+3548901
+RESULT text=dna algo=naiveLCE size=134217728 time=0.153759
+3548901
+RESULT text=dna algo=RA-LCE size=134217728 time=3.35253
+20
+RESULT text=dna algo=RA-RAW size=134217728 time=0.876077
+20
+RESULT text=dna algo=SA-LCE size=134217728 time=1.5525
+38
+RESULT text=dna algo=SA-RAW size=134217728 time=0.370883
+38
+RESULT text=dna algo=loadFile size=268435456 time=0.109509
+RESULT text=dna algo=buildDataStructure size=268435456 time=0.627419
+RESULT text=dna algo=fastLCE size=268435456 time=2.44938
+3536856
+RESULT text=dna algo=naiveLCE size=268435456 time=0.156226
+3536856
+RESULT text=dna algo=RA-LCE size=268435456 time=3.43306
+20
+RESULT text=dna algo=RA-RAW size=268435456 time=0.87543
+20
+RESULT text=dna algo=SA-LCE size=268435456 time=1.55283
+38
+RESULT text=dna algo=SA-RAW size=268435456 time=0.369635
+38
+RESULT text=dna algo=loadFile size=403927746 time=0.147418
+RESULT text=dna algo=buildDataStructure size=403927746 time=0.937434
+RESULT text=dna algo=fastLCE size=403927746 time=2.40464
+3502407
+RESULT text=dna algo=naiveLCE size=403927746 time=0.158889
+3502407
+RESULT text=dna algo=RA-LCE size=403927746 time=3.3431
+20
+RESULT text=dna algo=RA-RAW size=403927746 time=0.87826
+20
+RESULT text=dna algo=SA-LCE size=403927746 time=1.55391
+38
+RESULT text=dna algo=SA-RAW size=403927746 time=0.369743
+38
+RESULT text=a algo=loadFile size=256 time=5.19753e-05
+RESULT text=a algo=buildDataStructure size=256 time=2.90871e-05
+RESULT text=a algo=fastLCE size=256 time=21.9998
+858277391
+RESULT text=a algo=naiveLCE size=256 time=0.958876
+858277391
+RESULT text=a algo=RA-LCE size=256 time=1.14657
+20
+RESULT text=a algo=RA-RAW size=256 time=0.083472
+20
+RESULT text=a algo=SA-LCE size=256 time=1.73481
+20
+RESULT text=a algo=SA-RAW size=256 time=0.583882
+20
+RESULT text=a algo=loadFile size=512 time=1.5974e-05
+RESULT text=a algo=buildDataStructure size=512 time=3.48091e-05
+RESULT text=a algo=fastLCE size=512 time=27.2308
+1711520100
+RESULT text=a algo=naiveLCE size=512 time=1.86811
+1711520100
+RESULT text=a algo=RA-LCE size=512 time=1.17813
+20
+RESULT text=a algo=RA-RAW size=512 time=0.0838721
+20
+RESULT text=a algo=SA-LCE size=512 time=1.73746
+20
+RESULT text=a algo=SA-RAW size=512 time=0.568652
+20
+RESULT text=a algo=loadFile size=1024 time=1.62125e-05
+RESULT text=a algo=buildDataStructure size=1024 time=3.31402e-05
+RESULT text=a algo=fastLCE size=1024 time=31.6598
+3418475624
+RESULT text=a algo=naiveLCE size=1024 time=3.66178
+3418475624
+RESULT text=a algo=RA-LCE size=1024 time=1.17236
+20
+RESULT text=a algo=RA-RAW size=1024 time=0.0836961
+20
+RESULT text=a algo=SA-LCE size=1024 time=1.73316
+20
+RESULT text=a algo=SA-RAW size=1024 time=0.556904
+20
+RESULT text=a algo=loadFile size=2048 time=1.71661e-05
+RESULT text=a algo=buildDataStructure size=2048 time=3.69549e-05
+RESULT text=a algo=fastLCE size=2048 time=36.7609
+6834345599
+RESULT text=a algo=naiveLCE size=2048 time=7.26572
+6834345599
+RESULT text=a algo=RA-LCE size=2048 time=1.17629
+20
+RESULT text=a algo=RA-RAW size=2048 time=0.0835102
+20
+RESULT text=a algo=SA-LCE size=2048 time=1.72232
+20
+RESULT text=a algo=SA-RAW size=2048 time=0.542374
+20
+RESULT text=a algo=loadFile size=4096 time=1.88351e-05
+RESULT text=a algo=buildDataStructure size=4096 time=4.00543e-05
+RESULT text=a algo=fastLCE size=4096 time=42.163
+13657840403
+RESULT text=a algo=naiveLCE size=4096 time=14.4858
+13657840403
+RESULT text=a algo=RA-LCE size=4096 time=1.17754
+20
+RESULT text=a algo=RA-RAW size=4096 time=0.083195
+20
+RESULT text=a algo=SA-LCE size=4096 time=1.71242
+20
+RESULT text=a algo=SA-RAW size=4096 time=0.530496
+20
+RESULT text=a algo=loadFile size=8192 time=1.5974e-05
+RESULT text=a algo=buildDataStructure size=8192 time=4.79221e-05
+RESULT text=a algo=fastLCE size=8192 time=47.7555
+27323762150
+RESULT text=a algo=naiveLCE size=8192 time=28.8975
+27323762150
+RESULT text=a algo=RA-LCE size=8192 time=1.17828
+20
+RESULT text=a algo=RA-RAW size=8192 time=0.0833151
+20
+RESULT text=a algo=SA-LCE size=8192 time=1.69935
+20
+RESULT text=a algo=SA-RAW size=8192 time=0.516417
+20
+RESULT text=a algo=loadFile size=16384 time=1.50204e-05
+RESULT text=a algo=buildDataStructure size=16384 time=6.29425e-05
+RESULT text=a algo=fastLCE size=16384 time=53.6333
+54621552560
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=16384 time=1.20101
+20
+RESULT text=a algo=RA-RAW size=16384 time=0.0957391
+20
+RESULT text=a algo=SA-LCE size=16384 time=1.68767
+20
+RESULT text=a algo=SA-RAW size=16384 time=0.504089
+20
+RESULT text=a algo=loadFile size=32768 time=6.58035e-05
+RESULT text=a algo=buildDataStructure size=32768 time=0.000105143
+RESULT text=a algo=fastLCE size=32768 time=58.1757
+109249619380
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=32768 time=1.17863
+20
+RESULT text=a algo=RA-RAW size=32768 time=0.087491
+20
+RESULT text=a algo=SA-LCE size=32768 time=1.6723
+20
+RESULT text=a algo=SA-RAW size=32768 time=0.489413
+20
+RESULT text=a algo=loadFile size=65536 time=6.60419e-05
+RESULT text=a algo=buildDataStructure size=65536 time=0.000184059
+RESULT text=a algo=fastLCE size=65536 time=64.2205
+218450878869
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=65536 time=1.187
+20
+RESULT text=a algo=RA-RAW size=65536 time=0.098995
+20
+RESULT text=a algo=SA-LCE size=65536 time=1.66164
+20
+RESULT text=a algo=SA-RAW size=65536 time=0.477855
+20
+RESULT text=a algo=loadFile size=131072 time=8.4877e-05
+RESULT text=a algo=buildDataStructure size=131072 time=0.000344992
+RESULT text=a algo=fastLCE size=131072 time=74.9367
+436911444563
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=131072 time=1.22102
+20
+RESULT text=a algo=RA-RAW size=131072 time=0.10072
+20
+RESULT text=a algo=SA-LCE size=131072 time=1.72662
+20
+RESULT text=a algo=SA-RAW size=131072 time=0.486076
+20
+RESULT text=a algo=loadFile size=262144 time=0.000126839
+RESULT text=a algo=buildDataStructure size=262144 time=0.000710964
+RESULT text=a algo=fastLCE size=262144 time=78.949
+874473113823
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=262144 time=1.24259
+20
+RESULT text=a algo=RA-RAW size=262144 time=0.104895
+20
+RESULT text=a algo=SA-LCE size=262144 time=1.71387
+20
+RESULT text=a algo=SA-RAW size=262144 time=0.473332
+20
+RESULT text=a algo=loadFile size=524288 time=0.0140328
+RESULT text=a algo=buildDataStructure size=524288 time=0.00338697
+RESULT text=a algo=fastLCE size=524288 time=85.0308
+1747662401335
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=524288 time=1.24594
+20
+RESULT text=a algo=RA-RAW size=524288 time=0.144523
+20
+RESULT text=a algo=SA-LCE size=524288 time=1.69794
+20
+RESULT text=a algo=SA-RAW size=524288 time=0.458521
+20
+RESULT text=a algo=loadFile size=1048576 time=0.0143101
+RESULT text=a algo=buildDataStructure size=1048576 time=0.00650096
+RESULT text=a algo=fastLCE size=1048576 time=92.6675
+3494329795757
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=1048576 time=1.24784
+20
+RESULT text=a algo=RA-RAW size=1048576 time=0.157777
+20
+RESULT text=a algo=SA-LCE size=1048576 time=1.68745
+20
+RESULT text=a algo=SA-RAW size=1048576 time=0.446859
+20
+RESULT text=a algo=loadFile size=2097152 time=0.0149431
+RESULT text=a algo=buildDataStructure size=2097152 time=0.0090251
+RESULT text=a algo=fastLCE size=2097152 time=94.861
+6994741625500
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=2097152 time=1.25759
+20
+RESULT text=a algo=RA-RAW size=2097152 time=0.148905
+20
+RESULT text=a algo=SA-LCE size=2097152 time=1.59538
+20
+RESULT text=a algo=SA-RAW size=2097152 time=0.411401
+20
+RESULT text=a algo=loadFile size=4194304 time=0.0150781
+RESULT text=a algo=buildDataStructure size=4194304 time=0.017112
+RESULT text=a algo=fastLCE size=4194304 time=103.011
+13978545536590
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=4194304 time=1.26268
+20
+RESULT text=a algo=RA-RAW size=4194304 time=0.400892
+20
+RESULT text=a algo=SA-LCE size=4194304 time=1.6588
+20
+RESULT text=a algo=SA-RAW size=4194304 time=0.419922
+20
+RESULT text=a algo=loadFile size=8388608 time=0.0171738
+RESULT text=a algo=buildDataStructure size=8388608 time=0.0237851
+RESULT text=a algo=fastLCE size=8388608 time=113.551
+27943457341140
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=8388608 time=2.6266
+20
+RESULT text=a algo=RA-RAW size=8388608 time=0.797178
+20
+RESULT text=a algo=SA-LCE size=8388608 time=1.57377
+20
+RESULT text=a algo=SA-RAW size=8388608 time=0.387762
+20
+RESULT text=a algo=loadFile size=16777216 time=0.00766206
+RESULT text=a algo=buildDataStructure size=16777216 time=0.0414169
+RESULT text=a algo=fastLCE size=16777216 time=123.563
+55901547336805
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=16777216 time=2.89596
+20
+RESULT text=a algo=RA-RAW size=16777216 time=0.788955
+20
+RESULT text=a algo=SA-LCE size=16777216 time=1.56321
+20
+RESULT text=a algo=SA-RAW size=16777216 time=0.378616
+20
+RESULT text=a algo=loadFile size=33554432 time=0.0158849
+RESULT text=a algo=buildDataStructure size=33554432 time=0.0788491
+RESULT text=a algo=fastLCE size=33554432 time=130.903
+111797070633197
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=33554432 time=2.9422
+20
+RESULT text=a algo=RA-RAW size=33554432 time=0.821205
+20
+RESULT text=a algo=SA-LCE size=33554432 time=1.55351
+20
+RESULT text=a algo=SA-RAW size=33554432 time=0.369645
+20
+RESULT text=a algo=loadFile size=67108864 time=0.0351939
+RESULT text=a algo=buildDataStructure size=67108864 time=0.156182
+RESULT text=a algo=fastLCE size=67108864 time=142.185
+223733263056154
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=67108864 time=3.0756
+20
+RESULT text=a algo=RA-RAW size=67108864 time=0.816149
+20
+RESULT text=a algo=SA-LCE size=67108864 time=1.55203
+20
+RESULT text=a algo=SA-RAW size=67108864 time=0.369411
+20
+RESULT text=a algo=loadFile size=134217728 time=0.0519109
+RESULT text=a algo=buildDataStructure size=134217728 time=0.311971
+RESULT text=a algo=fastLCE size=134217728 time=152.167
+447351682946196
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=134217728 time=3.37051
+20
+RESULT text=a algo=RA-RAW size=134217728 time=0.869757
+20
+RESULT text=a algo=SA-LCE size=134217728 time=1.55317
+20
+RESULT text=a algo=SA-RAW size=134217728 time=0.369977
+20
+RESULT text=a algo=loadFile size=268435456 time=0.111994
+RESULT text=a algo=buildDataStructure size=268435456 time=0.625525
+RESULT text=a algo=fastLCE size=268435456 time=161.451
+895150921428885
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=268435456 time=3.42868
+20
+RESULT text=a algo=RA-RAW size=268435456 time=0.897607
+20
+RESULT text=a algo=SA-LCE size=268435456 time=1.55297
+20
+RESULT text=a algo=SA-RAW size=268435456 time=0.36972
+20
+RESULT text=a algo=loadFile size=536870912 time=0.198992
+RESULT text=a algo=buildDataStructure size=536870912 time=1.24611
+RESULT text=a algo=fastLCE size=536870912 time=171.659
+1790027570242857
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=536870912 time=3.58015
+20
+RESULT text=a algo=RA-RAW size=536870912 time=0.924342
+20
+RESULT text=a algo=SA-LCE size=536870912 time=1.55394
+20
+RESULT text=a algo=SA-RAW size=536870912 time=0.369721
+20
+RESULT text=a algo=loadFile size=1073741824 time=0.377917
+RESULT text=a algo=buildDataStructure size=1073741824 time=2.50272
+RESULT text=a algo=fastLCE size=1073741824 time=182.01
+3579514605670086
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=1073741824 time=3.64795
+20
+RESULT text=a algo=RA-RAW size=1073741824 time=1.09563
+20
+RESULT text=a algo=SA-LCE size=1073741824 time=1.55348
+20
+RESULT text=a algo=SA-RAW size=1073741824 time=0.371223
+20
+RESULT text=a algo=loadFile size=2000000000 time=0.6911
+RESULT text=a algo=buildDataStructure size=2000000000 time=4.64597
+RESULT text=a algo=fastLCE size=2000000000 time=190.881
+6666334646673570
+Too big for naiveLCE
+RESULT text=a algo=RA-LCE size=2000000000 time=4.17626
+20
+RESULT text=a algo=RA-RAW size=2000000000 time=1.78271
+20
+RESULT text=a algo=SA-LCE size=2000000000 time=1.55271
+20
+RESULT text=a algo=SA-RAW size=2000000000 time=0.369507
+20
