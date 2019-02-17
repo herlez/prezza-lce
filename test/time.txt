@@ -1,0 +1,367 @@
+RESULT text=english algo=fastLCE size=256 time=1.07228
+5682004
+RESULT text=english algo=naiveLCE size=256 time=0.0189221
+5682004
+RESULT text=a algo=fastLCE size=256 time=21.4143
+858650293
+RESULT text=a algo=naiveLCE size=256 time=0.750604
+858650293
+RESULT text=proteins algo=fastLCE size=256 time=1.09068
+5645267
+RESULT text=proteins algo=naiveLCE size=256 time=0.019531
+5645267
+RESULT text=dna algo=fastLCE size=256 time=1.47268
+8583000
+RESULT text=dna algo=naiveLCE size=256 time=0.0514731
+8583000
+RESULT text=english algo=fastLCE size=512 time=1.09358
+5701541
+RESULT text=english algo=naiveLCE size=512 time=0.0191472
+5701541
+RESULT text=a algo=fastLCE size=512 time=26.2432
+1712297814
+RESULT text=a algo=naiveLCE size=512 time=1.4262
+1712297814
+RESULT text=proteins algo=fastLCE size=512 time=1.08014
+5733507
+RESULT text=proteins algo=naiveLCE size=512 time=0.0185339
+5733507
+RESULT text=dna algo=fastLCE size=512 time=1.52181
+8805071
+RESULT text=dna algo=naiveLCE size=512 time=0.0530241
+8805071
+RESULT text=english algo=fastLCE size=1024 time=1.1023
+5628642
+RESULT text=english algo=naiveLCE size=1024 time=0.019129
+5628642
+RESULT text=a algo=fastLCE size=1024 time=31.5982
+3418282103
+RESULT text=a algo=naiveLCE size=1024 time=2.77623
+3418282103
+RESULT text=proteins algo=fastLCE size=1024 time=1.0796
+5609782
+RESULT text=proteins algo=naiveLCE size=1024 time=0.0180531
+5609782
+RESULT text=dna algo=fastLCE size=1024 time=1.78714
+10432747
+RESULT text=dna algo=naiveLCE size=1024 time=0.0668449
+10432747
+RESULT text=english algo=fastLCE size=2048 time=1.1141
+5836488
+RESULT text=english algo=naiveLCE size=2048 time=0.0201631
+5836488
+RESULT text=a algo=fastLCE size=2048 time=36.7154
+6824516868
+RESULT text=a algo=naiveLCE size=2048 time=5.48309
+6824516868
+RESULT text=proteins algo=fastLCE size=2048 time=1.10516
+5673226
+RESULT text=proteins algo=naiveLCE size=2048 time=0.0182281
+5673226
+RESULT text=dna algo=fastLCE size=2048 time=1.59547
+9223414
+RESULT text=dna algo=naiveLCE size=2048 time=0.0567639
+9223414
+RESULT text=english algo=fastLCE size=4096 time=1.20027
+6455485
+RESULT text=english algo=naiveLCE size=4096 time=0.0233769
+6456030
+RESULT text=a algo=fastLCE size=4096 time=42.1072
+13661466071
+RESULT text=a algo=naiveLCE size=4096 time=10.8805
+13661466071
+RESULT text=proteins algo=fastLCE size=4096 time=1.08812
+5821636
+RESULT text=proteins algo=naiveLCE size=4096 time=0.0183079
+5821632
+RESULT text=dna algo=fastLCE size=4096 time=1.5153
+8815312
+RESULT text=dna algo=naiveLCE size=4096 time=0.051163
+8815312
+RESULT text=english algo=fastLCE size=8192 time=1.12865
+5785486
+RESULT text=english algo=naiveLCE size=8192 time=0.0204771
+5786970
+RESULT text=a algo=fastLCE size=8192 time=47.2197
+27315658968
+RESULT text=a algo=naiveLCE size=8192 time=21.6861
+27315658968
+RESULT text=proteins algo=fastLCE size=8192 time=1.09488
+5667447
+RESULT text=proteins algo=naiveLCE size=8192 time=0.018661
+5667447
+RESULT text=dna algo=fastLCE size=8192 time=1.4909
+8460549
+RESULT text=dna algo=naiveLCE size=8192 time=0.049715
+8460549
+RESULT text=english algo=fastLCE size=16384 time=1.11481
+5766678
+RESULT text=english algo=naiveLCE size=16384 time=0.019671
+5768542
+RESULT text=a algo=fastLCE size=16384 time=52.5933
+54607908570
+RESULT text=a algo=naiveLCE size=16384 time=43.2122
+54607908570
+RESULT text=proteins algo=fastLCE size=16384 time=1.09098
+6146452
+RESULT text=proteins algo=naiveLCE size=16384 time=0.01841
+6146452
+RESULT text=dna algo=fastLCE size=16384 time=1.48425
+7889685
+RESULT text=dna algo=naiveLCE size=16384 time=0.0488441
+7889685
+RESULT text=english algo=fastLCE size=32768 time=1.10433
+6061154
+RESULT text=english algo=naiveLCE size=32768 time=0.0192859
+6062176
+RESULT text=a algo=fastLCE size=32768 time=57.9671
+109264194159
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=32768 time=1.08835
+5788711
+RESULT text=proteins algo=naiveLCE size=32768 time=0.0185211
+5788711
+RESULT text=dna algo=fastLCE size=32768 time=1.48197
+8033871
+RESULT text=dna algo=naiveLCE size=32768 time=0.048656
+8033871
+RESULT text=english algo=fastLCE size=65536 time=1.10284
+5845550
+RESULT text=english algo=naiveLCE size=65536 time=0.019784
+5846025
+RESULT text=a algo=fastLCE size=65536 time=63.5242
+218397793904
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=65536 time=1.08649
+5783004
+RESULT text=proteins algo=naiveLCE size=65536 time=0.0189791
+5783004
+RESULT text=dna algo=fastLCE size=65536 time=1.47995
+7112656
+RESULT text=dna algo=naiveLCE size=65536 time=0.0489872
+7112656
+RESULT text=english algo=fastLCE size=131072 time=1.1019
+6454034
+RESULT text=english algo=naiveLCE size=131072 time=0.019918
+6454266
+RESULT text=a algo=fastLCE size=131072 time=69.2817
+436833833791
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=131072 time=1.08397
+4760595
+RESULT text=proteins algo=naiveLCE size=131072 time=0.0191569
+4760595
+RESULT text=dna algo=fastLCE size=131072 time=1.48024
+8102462
+RESULT text=dna algo=naiveLCE size=131072 time=0.049407
+8102462
+RESULT text=english algo=fastLCE size=262144 time=1.0997
+5788419
+RESULT text=english algo=naiveLCE size=262144 time=0.0203931
+5788537
+RESULT text=a algo=fastLCE size=262144 time=74.6775
+873372733519
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=262144 time=1.11729
+5659600
+RESULT text=proteins algo=naiveLCE size=262144 time=0.019716
+5659600
+RESULT text=dna algo=fastLCE size=262144 time=1.48112
+8865378
+RESULT text=dna algo=naiveLCE size=262144 time=0.0495968
+8865378
+RESULT text=english algo=fastLCE size=524288 time=1.10339
+4734682
+RESULT text=english algo=naiveLCE size=524288 time=0.0241709
+4734749
+RESULT text=a algo=fastLCE size=524288 time=80.4104
+1747027954484
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=524288 time=1.08788
+5192176
+RESULT text=proteins algo=naiveLCE size=524288 time=0.0232041
+5192176
+RESULT text=dna algo=fastLCE size=524288 time=1.48556
+8116177
+RESULT text=dna algo=naiveLCE size=524288 time=0.0522962
+8116177
+RESULT text=english algo=fastLCE size=1048576 time=1.11463
+8841162
+RESULT text=english algo=naiveLCE size=1048576 time=0.0263531
+8841633
+RESULT text=a algo=fastLCE size=1048576 time=86.1563
+3497435119109
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=1048576 time=1.09408
+4563674
+RESULT text=proteins algo=naiveLCE size=1048576 time=0.025588
+4563674
+RESULT text=dna algo=fastLCE size=1048576 time=1.49078
+10688088
+RESULT text=dna algo=naiveLCE size=1048576 time=0.0539789
+10688088
+RESULT text=english algo=fastLCE size=2097152 time=1.11606
+7619601
+RESULT text=english algo=naiveLCE size=2097152 time=0.027941
+7619819
+RESULT text=a algo=fastLCE size=2097152 time=92.6919
+6987337272981
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=2097152 time=1.09622
+5992256
+RESULT text=proteins algo=naiveLCE size=2097152 time=0.02652
+5992256
+RESULT text=dna algo=fastLCE size=2097152 time=1.49411
+11116672
+RESULT text=dna algo=naiveLCE size=2097152 time=0.055373
+11116672
+RESULT text=english algo=fastLCE size=4194304 time=1.13537
+6879624
+RESULT text=english algo=naiveLCE size=4194304 time=0.0380189
+6879804
+RESULT text=a algo=fastLCE size=4194304 time=97.9636
+13978518925421
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=4194304 time=1.11315
+4239742
+RESULT text=proteins algo=naiveLCE size=4194304 time=0.034373
+4239742
+RESULT text=dna algo=fastLCE size=4194304 time=1.506
+8700137
+RESULT text=dna algo=naiveLCE size=4194304 time=0.0633099
+8700137
+RESULT text=english algo=fastLCE size=8388608 time=1.30383
+16667605
+RESULT text=english algo=naiveLCE size=8388608 time=0.0863461
+16667739
+RESULT text=a algo=fastLCE size=8388608 time=107.413
+27964865529423
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=8388608 time=1.275
+8670201
+RESULT text=proteins algo=naiveLCE size=8388608 time=0.0858951
+8670201
+RESULT text=dna algo=fastLCE size=8388608 time=1.67963
+3479467
+RESULT text=dna algo=naiveLCE size=8388608 time=0.113018
+3479467
+RESULT text=english algo=fastLCE size=16777216 time=1.63068
+775455
+RESULT text=english algo=naiveLCE size=16777216 time=0.096025
+775591
+RESULT text=a algo=fastLCE size=16777216 time=120.027
+55916500843436
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=16777216 time=1.62155
+643137
+RESULT text=proteins algo=naiveLCE size=16777216 time=0.111257
+643137
+RESULT text=dna algo=fastLCE size=16777216 time=2.02734
+12816939
+RESULT text=dna algo=naiveLCE size=16777216 time=0.143437
+12816939
+RESULT text=english algo=fastLCE size=33554432 time=1.85794
+769586
+RESULT text=english algo=naiveLCE size=33554432 time=0.11869
+769730
+RESULT text=a algo=fastLCE size=33554432 time=131.746
+111785123121025
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=33554432 time=1.83233
+631467
+RESULT text=proteins algo=naiveLCE size=33554432 time=0.116003
+631467
+RESULT text=dna algo=fastLCE size=33554432 time=2.13124
+37120628
+RESULT text=dna algo=naiveLCE size=33554432 time=0.136239
+37120628
+RESULT text=english algo=fastLCE size=67108864 time=1.75685
+764538
+RESULT text=english algo=naiveLCE size=67108864 time=0.10748
+764626
+RESULT text=a algo=fastLCE size=67108864 time=141.043
+223607604504025
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=67108864 time=1.95408
+18284202
+RESULT text=proteins algo=naiveLCE size=67108864 time=0.121603
+18284202
+RESULT text=dna algo=fastLCE size=67108864 time=2.3631
+3511866
+RESULT text=dna algo=naiveLCE size=67108864 time=0.152836
+3511866
+RESULT text=english algo=fastLCE size=134217728 time=2.04557
+758851
+RESULT text=english algo=naiveLCE size=134217728 time=0.125757
+758931
+RESULT text=a algo=fastLCE size=134217728 time=150.378
+447549051383047
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=134217728 time=2.02129
+634607
+RESULT text=proteins algo=naiveLCE size=134217728 time=0.124598
+634607
+RESULT text=dna algo=fastLCE size=134217728 time=2.43446
+3540071
+RESULT text=dna algo=naiveLCE size=134217728 time=0.158024
+3540071
+RESULT text=english algo=fastLCE size=268435456 time=2.05641
+755032
+RESULT text=english algo=naiveLCE size=268435456 time=0.128786
+755098
+RESULT text=a algo=fastLCE size=268435456 time=159.479
+895238234413321
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=268435456 time=2.0814
+624840
+RESULT text=proteins algo=naiveLCE size=268435456 time=0.128001
+624840
+RESULT text=dna algo=fastLCE size=268435456 time=2.42968
+3533520
+RESULT text=dna algo=naiveLCE size=268435456 time=0.16085
+3533520
+RESULT text=english algo=fastLCE size=536870912 time=2.12021
+749438
+RESULT text=english algo=naiveLCE size=536870912 time=0.131863
+749477
+RESULT text=a algo=fastLCE size=536870912 time=168.106
+1789243664245134
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=536870912 time=2.10665
+621372
+RESULT text=proteins algo=naiveLCE size=536870912 time=0.130987
+621372
+dna finished.
+RESULT text=dna algo=fastLCE size=403927746 time=2.4915
+3497350
+RESULT text=dna algo=naiveLCE size=403927746 time=0.161555
+3497350
+RESULT text=english algo=fastLCE size=1073741824 time=2.19315
+750583
+RESULT text=english algo=naiveLCE size=1073741824 time=0.129851
+750635
+RESULT text=a algo=fastLCE size=1073741824 time=180.053
+3577875867148715
+Too big for naiveLCE
+RESULT text=proteins algo=fastLCE size=1073741824 time=2.1842
+623652
+RESULT text=proteins algo=naiveLCE size=1073741824 time=0.148381
+623652
+RESULT text=english algo=fastLCE size=2147483648 time=2.40287
+751881
+RESULT text=english algo=naiveLCE size=2147483648 time=0.222093
+751928
+a finished.
+RESULT text=a algo=fastLCE size=2000000000 time=190.752
+6663348558596415
+Too big for naiveLCE
+proteins finished.
+RESULT text=proteins algo=fastLCE size=1184051855 time=2.17254
+624624
+RESULT text=proteins algo=naiveLCE size=1184051855 time=0.155076
+624624
+english finished.
+RESULT text=english algo=fastLCE size=2210395553 time=2.38564
+752226
+RESULT text=english algo=naiveLCE size=2210395553 time=0.226078
+752270

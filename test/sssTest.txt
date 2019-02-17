@@ -1,0 +1,213 @@
+Data size: 2210395553
+32
+RESULT text=english size=2210395553 suffixes=32 algo=std::sort_naive time=5.00679e-06
+RESULT text=english size=2210395553 suffixes=32 algo=std::sort_fastlce time=4.50611e-05
+64
+RESULT text=english size=2210395553 suffixes=64 algo=std::sort_naive time=7.15256e-06
+RESULT text=english size=2210395553 suffixes=64 algo=std::sort_fastlce time=8.89301e-05
+128
+RESULT text=english size=2210395553 suffixes=128 algo=std::sort_naive time=1.19209e-05
+RESULT text=english size=2210395553 suffixes=128 algo=std::sort_fastlce time=0.000202894
+256
+RESULT text=english size=2210395553 suffixes=256 algo=std::sort_naive time=2.5034e-05
+RESULT text=english size=2210395553 suffixes=256 algo=std::sort_fastlce time=0.000509977
+512
+RESULT text=english size=2210395553 suffixes=512 algo=std::sort_naive time=5.60284e-05
+RESULT text=english size=2210395553 suffixes=512 algo=std::sort_fastlce time=0.00126195
+1024
+RESULT text=english size=2210395553 suffixes=1024 algo=std::sort_naive time=0.00012207
+RESULT text=english size=2210395553 suffixes=1024 algo=std::sort_fastlce time=0.00302792
+2048
+RESULT text=english size=2210395553 suffixes=2048 algo=std::sort_naive time=0.000282049
+RESULT text=english size=2210395553 suffixes=2048 algo=std::sort_fastlce time=0.0074842
+4096
+RESULT text=english size=2210395553 suffixes=4096 algo=std::sort_naive time=0.000640154
+RESULT text=english size=2210395553 suffixes=4096 algo=std::sort_fastlce time=0.01756
+8192
+RESULT text=english size=2210395553 suffixes=8192 algo=std::sort_naive time=0.00145388
+RESULT text=english size=2210395553 suffixes=8192 algo=std::sort_fastlce time=0.0425799
+16384
+RESULT text=english size=2210395553 suffixes=16384 algo=std::sort_naive time=0.00338888
+RESULT text=english size=2210395553 suffixes=16384 algo=std::sort_fastlce time=0.110828
+32768
+RESULT text=english size=2210395553 suffixes=32768 algo=std::sort_naive time=0.00917602
+RESULT text=english size=2210395553 suffixes=32768 algo=std::sort_fastlce time=0.236391
+65536
+RESULT text=english size=2210395553 suffixes=65536 algo=std::sort_naive time=0.021677
+RESULT text=english size=2210395553 suffixes=65536 algo=std::sort_fastlce time=0.550211
+131072
+RESULT text=english size=2210395553 suffixes=131072 algo=std::sort_naive time=0.052485
+RESULT text=english size=2210395553 suffixes=131072 algo=std::sort_fastlce time=1.24808
+262144
+RESULT text=english size=2210395553 suffixes=262144 algo=std::sort_naive time=0.109928
+RESULT text=english size=2210395553 suffixes=262144 algo=std::sort_fastlce time=2.83506
+524288
+RESULT text=english size=2210395553 suffixes=524288 algo=std::sort_naive time=0.241844
+RESULT text=english size=2210395553 suffixes=524288 algo=std::sort_fastlce time=6.40571
+1048576
+RESULT text=english size=2210395553 suffixes=1048576 algo=std::sort_naive time=0.522604
+RESULT text=english size=2210395553 suffixes=1048576 algo=std::sort_fastlce time=14.591
+2097152
+RESULT text=english size=2210395553 suffixes=2097152 algo=std::sort_naive time=1.23735
+RESULT text=english size=2210395553 suffixes=2097152 algo=std::sort_fastlce time=32.5594
+4194304
+RESULT text=english size=2210395553 suffixes=4194304 algo=std::sort_naive time=2.64681
+8388608
+RESULT text=english size=2210395553 suffixes=8388608 algo=std::sort_naive time=6.42197
+16777216
+RESULT text=english size=2210395553 suffixes=16777216 algo=std::sort_naive time=16.4442
+33554432
+RESULT text=english size=2210395553 suffixes=33554432 algo=std::sort_naive time=46.8346
+Data size: 1184051855
+32
+RESULT text=proteins size=1184051855 suffixes=32 algo=std::sort_naive time=4.05312e-06
+RESULT text=proteins size=1184051855 suffixes=32 algo=std::sort_fastlce time=4.1008e-05
+64
+RESULT text=proteins size=1184051855 suffixes=64 algo=std::sort_naive time=5.00679e-06
+RESULT text=proteins size=1184051855 suffixes=64 algo=std::sort_fastlce time=7.9155e-05
+128
+RESULT text=proteins size=1184051855 suffixes=128 algo=std::sort_naive time=1.09673e-05
+RESULT text=proteins size=1184051855 suffixes=128 algo=std::sort_fastlce time=0.00020504
+256
+RESULT text=proteins size=1184051855 suffixes=256 algo=std::sort_naive time=2.31266e-05
+RESULT text=proteins size=1184051855 suffixes=256 algo=std::sort_fastlce time=0.000494957
+512
+RESULT text=proteins size=1184051855 suffixes=512 algo=std::sort_naive time=5.19753e-05
+RESULT text=proteins size=1184051855 suffixes=512 algo=std::sort_fastlce time=0.00122905
+1024
+RESULT text=proteins size=1184051855 suffixes=1024 algo=std::sort_naive time=0.000109911
+RESULT text=proteins size=1184051855 suffixes=1024 algo=std::sort_fastlce time=0.00289202
+2048
+RESULT text=proteins size=1184051855 suffixes=2048 algo=std::sort_naive time=0.000255108
+RESULT text=proteins size=1184051855 suffixes=2048 algo=std::sort_fastlce time=0.00673223
+4096
+RESULT text=proteins size=1184051855 suffixes=4096 algo=std::sort_naive time=0.000592947
+RESULT text=proteins size=1184051855 suffixes=4096 algo=std::sort_fastlce time=0.0169079
+8192
+RESULT text=proteins size=1184051855 suffixes=8192 algo=std::sort_naive time=0.00136805
+RESULT text=proteins size=1184051855 suffixes=8192 algo=std::sort_fastlce time=0.040647
+16384
+RESULT text=proteins size=1184051855 suffixes=16384 algo=std::sort_naive time=0.00306201
+RESULT text=proteins size=1184051855 suffixes=16384 algo=std::sort_fastlce time=0.0940011
+32768
+RESULT text=proteins size=1184051855 suffixes=32768 algo=std::sort_naive time=0.00641513
+RESULT text=proteins size=1184051855 suffixes=32768 algo=std::sort_fastlce time=0.211943
+65536
+RESULT text=proteins size=1184051855 suffixes=65536 algo=std::sort_naive time=0.020632
+RESULT text=proteins size=1184051855 suffixes=65536 algo=std::sort_fastlce time=0.495806
+131072
+RESULT text=proteins size=1184051855 suffixes=131072 algo=std::sort_naive time=0.0449479
+RESULT text=proteins size=1184051855 suffixes=131072 algo=std::sort_fastlce time=1.09852
+262144
+RESULT text=proteins size=1184051855 suffixes=262144 algo=std::sort_naive time=0.110224
+RESULT text=proteins size=1184051855 suffixes=262144 algo=std::sort_fastlce time=2.52386
+524288
+RESULT text=proteins size=1184051855 suffixes=524288 algo=std::sort_naive time=0.228272
+RESULT text=proteins size=1184051855 suffixes=524288 algo=std::sort_fastlce time=5.49553
+1048576
+RESULT text=proteins size=1184051855 suffixes=1048576 algo=std::sort_naive time=0.607318
+RESULT text=proteins size=1184051855 suffixes=1048576 algo=std::sort_fastlce time=12.6724
+2097152
+RESULT text=proteins size=1184051855 suffixes=2097152 algo=std::sort_naive time=1.2648
+RESULT text=proteins size=1184051855 suffixes=2097152 algo=std::sort_fastlce time=28.3232
+4194304
+RESULT text=proteins size=1184051855 suffixes=4194304 algo=std::sort_naive time=2.31957
+RESULT text=proteins size=1184051855 suffixes=4194304 algo=std::sort_fastlce time=62.1066
+8388608
+RESULT text=proteins size=1184051855 suffixes=8388608 algo=std::sort_naive time=6.23082
+16777216
+RESULT text=proteins size=1184051855 suffixes=16777216 algo=std::sort_naive time=13.4054
+33554432
+RESULT text=proteins size=1184051855 suffixes=33554432 algo=std::sort_naive time=28.3861
+67108864
+RESULT text=proteins size=1184051855 suffixes=67108864 algo=std::sort_naive time=64.8684
+Data size: 403927746
+32
+RESULT text=dna size=403927746 suffixes=32 algo=std::sort_naive time=4.05312e-06
+RESULT text=dna size=403927746 suffixes=32 algo=std::sort_fastlce time=5.6982e-05
+64
+RESULT text=dna size=403927746 suffixes=64 algo=std::sort_naive time=6.91414e-06
+RESULT text=dna size=403927746 suffixes=64 algo=std::sort_fastlce time=0.000128031
+128
+RESULT text=dna size=403927746 suffixes=128 algo=std::sort_naive time=1.28746e-05
+RESULT text=dna size=403927746 suffixes=128 algo=std::sort_fastlce time=0.000324965
+256
+RESULT text=dna size=403927746 suffixes=256 algo=std::sort_naive time=3.09944e-05
+RESULT text=dna size=403927746 suffixes=256 algo=std::sort_fastlce time=0.000892878
+512
+RESULT text=dna size=403927746 suffixes=512 algo=std::sort_naive time=6.50883e-05
+RESULT text=dna size=403927746 suffixes=512 algo=std::sort_fastlce time=0.00232506
+1024
+RESULT text=dna size=403927746 suffixes=1024 algo=std::sort_naive time=0.000144005
+RESULT text=dna size=403927746 suffixes=1024 algo=std::sort_fastlce time=0.00556588
+2048
+RESULT text=dna size=403927746 suffixes=2048 algo=std::sort_naive time=0.000341177
+RESULT text=dna size=403927746 suffixes=2048 algo=std::sort_fastlce time=0.0134192
+4096
+RESULT text=dna size=403927746 suffixes=4096 algo=std::sort_naive time=0.000976086
+RESULT text=dna size=403927746 suffixes=4096 algo=std::sort_fastlce time=0.0322239
+8192
+RESULT text=dna size=403927746 suffixes=8192 algo=std::sort_naive time=0.00174212
+RESULT text=dna size=403927746 suffixes=8192 algo=std::sort_fastlce time=0.079432
+16384
+RESULT text=dna size=403927746 suffixes=16384 algo=std::sort_naive time=0.00464416
+RESULT text=dna size=403927746 suffixes=16384 algo=std::sort_fastlce time=0.202121
+32768
+RESULT text=dna size=403927746 suffixes=32768 algo=std::sort_naive time=0.0113921
+RESULT text=dna size=403927746 suffixes=32768 algo=std::sort_fastlce time=0.435633
+65536
+RESULT text=dna size=403927746 suffixes=65536 algo=std::sort_naive time=0.0219159
+RESULT text=dna size=403927746 suffixes=65536 algo=std::sort_fastlce time=0.960501
+131072
+RESULT text=dna size=403927746 suffixes=131072 algo=std::sort_naive time=0.050714
+RESULT text=dna size=403927746 suffixes=131072 algo=std::sort_fastlce time=2.1601
+262144
+RESULT text=dna size=403927746 suffixes=262144 algo=std::sort_naive time=0.144913
+RESULT text=dna size=403927746 suffixes=262144 algo=std::sort_fastlce time=4.93128
+524288
+RESULT text=dna size=403927746 suffixes=524288 algo=std::sort_naive time=0.321617
+RESULT text=dna size=403927746 suffixes=524288 algo=std::sort_fastlce time=10.662
+1048576
+RESULT text=dna size=403927746 suffixes=1048576 algo=std::sort_naive time=0.558415
+RESULT text=dna size=403927746 suffixes=1048576 algo=std::sort_fastlce time=23.8571
+2097152
+RESULT text=dna size=403927746 suffixes=2097152 algo=std::sort_naive time=1.20729
+RESULT text=dna size=403927746 suffixes=2097152 algo=std::sort_fastlce time=51.6161
+4194304
+RESULT text=dna size=403927746 suffixes=4194304 algo=std::sort_naive time=3.04287
+8388608
+RESULT text=dna size=403927746 suffixes=8388608 algo=std::sort_naive time=6.18433
+16777216
+RESULT text=dna size=403927746 suffixes=16777216 algo=std::sort_naive time=13.1802
+33554432
+RESULT text=dna size=403927746 suffixes=33554432 algo=std::sort_naive time=27.3566
+67108864
+RESULT text=dna size=403927746 suffixes=67108864 algo=std::sort_naive time=58.2607
+Data size: 2000000000
+32
+RESULT text=a size=2000000000 suffixes=32 algo=std::sort_naive time=49.2902
+RESULT text=a size=2000000000 suffixes=32 algo=std::sort_fastlce time=0.00163603
+64
+RESULT text=a size=2000000000 suffixes=64 algo=std::sort_fastlce time=0.00365591
+128
+RESULT text=a size=2000000000 suffixes=128 algo=std::sort_fastlce time=0.00862694
+256
+RESULT text=a size=2000000000 suffixes=256 algo=std::sort_fastlce time=0.0232852
+512
+RESULT text=a size=2000000000 suffixes=512 algo=std::sort_fastlce time=0.057487
+1024
+RESULT text=a size=2000000000 suffixes=1024 algo=std::sort_fastlce time=0.130872
+2048
+RESULT text=a size=2000000000 suffixes=2048 algo=std::sort_fastlce time=0.305416
+4096
+RESULT text=a size=2000000000 suffixes=4096 algo=std::sort_fastlce time=0.695364
+8192
+RESULT text=a size=2000000000 suffixes=8192 algo=std::sort_fastlce time=1.51139
+16384
+RESULT text=a size=2000000000 suffixes=16384 algo=std::sort_fastlce time=3.26802
+32768
+RESULT text=a size=2000000000 suffixes=32768 algo=std::sort_fastlce time=7.19467
+65536
+RESULT text=a size=2000000000 suffixes=65536 algo=std::sort_fastlce time=15.6677
+131072
+RESULT text=a size=2000000000 suffixes=131072 algo=std::sort_fastlce time=33.6539

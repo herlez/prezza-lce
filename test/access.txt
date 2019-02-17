@@ -1,0 +1,764 @@
+RESULT text=english algo=RA-LCE size=256 time=1.14235
+20
+RESULT text=english algo=RA-RAW size=256 time=0.082701
+20
+RESULT text=english algo=SA-LCE size=256 time=1.73032
+23
+RESULT text=english algo=SA-RAW size=256 time=0.583199
+23
+RESULT text=a algo=RA-LCE size=256 time=1.14602
+20
+RESULT text=a algo=RA-RAW size=256 time=0.0831151
+20
+RESULT text=a algo=SA-LCE size=256 time=1.73359
+20
+RESULT text=a algo=SA-RAW size=256 time=0.583163
+20
+RESULT text=proteins algo=RA-LCE size=256 time=1.14569
+20
+RESULT text=proteins algo=RA-RAW size=256 time=0.090663
+20
+RESULT text=proteins algo=SA-LCE size=256 time=1.73671
+23
+RESULT text=proteins algo=SA-RAW size=256 time=0.583165
+23
+RESULT text=dna algo=RA-LCE size=256 time=1.14238
+20
+RESULT text=dna algo=RA-RAW size=256 time=0.0829461
+20
+RESULT text=dna algo=SA-LCE size=256 time=1.73026
+41
+RESULT text=dna algo=SA-RAW size=256 time=0.583254
+41
+RESULT text=english algo=RA-LCE size=512 time=1.16228
+20
+RESULT text=english algo=RA-RAW size=512 time=0.0834641
+20
+RESULT text=english algo=SA-LCE size=512 time=1.73414
+23
+RESULT text=english algo=SA-RAW size=512 time=0.568603
+23
+RESULT text=a algo=RA-LCE size=512 time=1.16383
+20
+RESULT text=a algo=RA-RAW size=512 time=0.0830791
+20
+RESULT text=a algo=SA-LCE size=512 time=1.73582
+20
+RESULT text=a algo=SA-RAW size=512 time=0.568582
+20
+RESULT text=proteins algo=RA-LCE size=512 time=1.16399
+20
+RESULT text=proteins algo=RA-RAW size=512 time=0.0829921
+20
+RESULT text=proteins algo=SA-LCE size=512 time=1.73558
+23
+RESULT text=proteins algo=SA-RAW size=512 time=0.56861
+23
+RESULT text=dna algo=RA-LCE size=512 time=1.16231
+20
+RESULT text=dna algo=RA-RAW size=512 time=0.0834839
+20
+RESULT text=dna algo=SA-LCE size=512 time=1.73421
+41
+RESULT text=dna algo=SA-RAW size=512 time=0.568564
+41
+RESULT text=english algo=RA-LCE size=1024 time=1.17129
+20
+RESULT text=english algo=RA-RAW size=1024 time=0.0835509
+20
+RESULT text=english algo=SA-LCE size=1024 time=1.731
+23
+RESULT text=english algo=SA-RAW size=1024 time=0.556816
+23
+RESULT text=a algo=RA-LCE size=1024 time=1.1727
+20
+RESULT text=a algo=RA-RAW size=1024 time=0.0835719
+20
+RESULT text=a algo=SA-LCE size=1024 time=1.73177
+20
+RESULT text=a algo=SA-RAW size=1024 time=0.556801
+20
+RESULT text=proteins algo=RA-LCE size=1024 time=1.17245
+20
+RESULT text=proteins algo=RA-RAW size=1024 time=0.083719
+20
+RESULT text=proteins algo=SA-LCE size=1024 time=1.7321
+23
+RESULT text=proteins algo=SA-RAW size=1024 time=0.556742
+23
+RESULT text=dna algo=RA-LCE size=1024 time=1.1703
+20
+RESULT text=dna algo=RA-RAW size=1024 time=0.0835071
+20
+RESULT text=dna algo=SA-LCE size=1024 time=1.73002
+41
+RESULT text=dna algo=SA-RAW size=1024 time=0.556799
+41
+RESULT text=english algo=RA-LCE size=2048 time=1.17513
+20
+RESULT text=english algo=RA-RAW size=2048 time=0.08357
+20
+RESULT text=english algo=SA-LCE size=2048 time=1.71992
+23
+RESULT text=english algo=SA-RAW size=2048 time=0.542206
+23
+RESULT text=a algo=RA-LCE size=2048 time=1.176
+20
+RESULT text=a algo=RA-RAW size=2048 time=0.08375
+20
+RESULT text=a algo=SA-LCE size=2048 time=1.72074
+20
+RESULT text=a algo=SA-RAW size=2048 time=0.542177
+20
+RESULT text=proteins algo=RA-LCE size=2048 time=1.17625
+20
+RESULT text=proteins algo=RA-RAW size=2048 time=0.084084
+20
+RESULT text=proteins algo=SA-LCE size=2048 time=1.72092
+23
+RESULT text=proteins algo=SA-RAW size=2048 time=0.542199
+23
+RESULT text=dna algo=RA-LCE size=2048 time=1.17477
+20
+RESULT text=dna algo=RA-RAW size=2048 time=0.0836129
+20
+RESULT text=dna algo=SA-LCE size=2048 time=1.71941
+41
+RESULT text=dna algo=SA-RAW size=2048 time=0.542169
+41
+RESULT text=english algo=RA-LCE size=4096 time=1.17717
+20
+RESULT text=english algo=RA-RAW size=4096 time=0.0837948
+20
+RESULT text=english algo=SA-LCE size=4096 time=1.71072
+23
+RESULT text=english algo=SA-RAW size=4096 time=0.530588
+23
+RESULT text=a algo=RA-LCE size=4096 time=1.17758
+20
+RESULT text=a algo=RA-RAW size=4096 time=0.084084
+20
+RESULT text=a algo=SA-LCE size=4096 time=1.7115
+20
+RESULT text=a algo=SA-RAW size=4096 time=0.53043
+20
+RESULT text=proteins algo=RA-LCE size=4096 time=1.17783
+20
+RESULT text=proteins algo=RA-RAW size=4096 time=0.0836809
+20
+RESULT text=proteins algo=SA-LCE size=4096 time=1.71061
+23
+RESULT text=proteins algo=SA-RAW size=4096 time=0.530417
+23
+RESULT text=dna algo=RA-LCE size=4096 time=1.17603
+20
+RESULT text=dna algo=RA-RAW size=4096 time=0.0837989
+20
+RESULT text=dna algo=SA-LCE size=4096 time=1.70891
+41
+RESULT text=dna algo=SA-RAW size=4096 time=0.53041
+41
+RESULT text=english algo=RA-LCE size=8192 time=1.1787
+20
+RESULT text=english algo=RA-RAW size=8192 time=0.0835221
+20
+RESULT text=english algo=SA-LCE size=8192 time=1.69675
+144
+RESULT text=english algo=SA-RAW size=8192 time=0.515803
+144
+RESULT text=a algo=RA-LCE size=8192 time=1.17793
+20
+RESULT text=a algo=RA-RAW size=8192 time=0.083513
+20
+RESULT text=a algo=SA-LCE size=8192 time=1.69624
+20
+RESULT text=a algo=SA-RAW size=8192 time=0.515792
+20
+RESULT text=proteins algo=RA-LCE size=8192 time=1.17886
+20
+RESULT text=proteins algo=RA-RAW size=8192 time=0.0832219
+20
+RESULT text=proteins algo=SA-LCE size=8192 time=1.69723
+31
+RESULT text=proteins algo=SA-RAW size=8192 time=0.515866
+31
+RESULT text=dna algo=RA-LCE size=8192 time=1.17766
+20
+RESULT text=dna algo=RA-RAW size=8192 time=0.083298
+20
+RESULT text=dna algo=SA-LCE size=8192 time=1.69602
+39
+RESULT text=dna algo=SA-RAW size=8192 time=0.515829
+39
+RESULT text=english algo=RA-LCE size=16384 time=1.17885
+20
+RESULT text=english algo=RA-RAW size=16384 time=0.083194
+20
+RESULT text=english algo=SA-LCE size=16384 time=1.68558
+70
+RESULT text=english algo=SA-RAW size=16384 time=0.503992
+70
+RESULT text=a algo=RA-LCE size=16384 time=1.17883
+20
+RESULT text=a algo=RA-RAW size=16384 time=0.083216
+20
+RESULT text=a algo=SA-LCE size=16384 time=1.68569
+20
+RESULT text=a algo=SA-RAW size=16384 time=0.50403
+20
+RESULT text=proteins algo=RA-LCE size=16384 time=1.17891
+20
+RESULT text=proteins algo=RA-RAW size=16384 time=0.083308
+20
+RESULT text=proteins algo=SA-LCE size=16384 time=1.68568
+33
+RESULT text=proteins algo=SA-RAW size=16384 time=0.503998
+33
+RESULT text=dna algo=RA-LCE size=16384 time=1.17867
+20
+RESULT text=dna algo=RA-RAW size=16384 time=0.0830832
+20
+RESULT text=dna algo=SA-LCE size=16384 time=1.68539
+43
+RESULT text=dna algo=SA-RAW size=16384 time=0.504051
+43
+RESULT text=english algo=RA-LCE size=32768 time=1.17893
+20
+RESULT text=english algo=RA-RAW size=32768 time=0.0849891
+20
+RESULT text=english algo=SA-LCE size=32768 time=1.67159
+48
+RESULT text=english algo=SA-RAW size=32768 time=0.489447
+48
+RESULT text=a algo=RA-LCE size=32768 time=1.17942
+20
+RESULT text=a algo=RA-RAW size=32768 time=0.0852308
+20
+RESULT text=a algo=SA-LCE size=32768 time=1.67176
+20
+RESULT text=a algo=SA-RAW size=32768 time=0.492705
+20
+RESULT text=proteins algo=RA-LCE size=32768 time=1.1788
+20
+RESULT text=proteins algo=RA-RAW size=32768 time=0.0852201
+20
+RESULT text=proteins algo=SA-LCE size=32768 time=1.67137
+109
+RESULT text=proteins algo=SA-RAW size=32768 time=0.489455
+109
+RESULT text=dna algo=RA-LCE size=32768 time=1.17883
+20
+RESULT text=dna algo=RA-RAW size=32768 time=0.085182
+20
+RESULT text=dna algo=SA-LCE size=32768 time=1.67135
+24
+RESULT text=dna algo=SA-RAW size=32768 time=0.489439
+24
+RESULT text=english algo=RA-LCE size=65536 time=1.17916
+20
+RESULT text=english algo=RA-RAW size=65536 time=0.0917711
+20
+RESULT text=english algo=SA-LCE size=65536 time=1.65957
+142
+RESULT text=english algo=SA-RAW size=65536 time=0.477637
+142
+RESULT text=a algo=RA-LCE size=65536 time=1.17901
+20
+RESULT text=a algo=RA-RAW size=65536 time=0.0925269
+20
+RESULT text=a algo=SA-LCE size=65536 time=1.65958
+20
+RESULT text=a algo=SA-RAW size=65536 time=0.477636
+20
+RESULT text=proteins algo=RA-LCE size=65536 time=1.17894
+20
+RESULT text=proteins algo=RA-RAW size=65536 time=0.0922749
+20
+RESULT text=proteins algo=SA-LCE size=65536 time=1.65947
+103
+RESULT text=proteins algo=SA-RAW size=65536 time=0.477639
+103
+RESULT text=dna algo=RA-LCE size=65536 time=1.17946
+20
+RESULT text=dna algo=RA-RAW size=65536 time=0.0929868
+20
+RESULT text=dna algo=SA-LCE size=65536 time=1.65941
+39
+RESULT text=dna algo=SA-RAW size=65536 time=0.477633
+39
+RESULT text=english algo=RA-LCE size=131072 time=1.17955
+20
+RESULT text=english algo=RA-RAW size=131072 time=0.0965071
+20
+RESULT text=english algo=SA-LCE size=131072 time=1.64514
+111
+RESULT text=english algo=SA-RAW size=131072 time=0.463143
+111
+RESULT text=a algo=RA-LCE size=131072 time=1.17953
+20
+RESULT text=a algo=RA-RAW size=131072 time=0.0970671
+20
+RESULT text=a algo=SA-LCE size=131072 time=1.64525
+20
+RESULT text=a algo=SA-RAW size=131072 time=0.463072
+20
+RESULT text=proteins algo=RA-LCE size=131072 time=1.17936
+20
+RESULT text=proteins algo=RA-RAW size=131072 time=0.0963061
+20
+RESULT text=proteins algo=SA-LCE size=131072 time=1.64501
+48
+RESULT text=proteins algo=SA-RAW size=131072 time=0.463103
+48
+RESULT text=dna algo=RA-LCE size=131072 time=1.17948
+20
+RESULT text=dna algo=RA-RAW size=131072 time=0.0962219
+20
+RESULT text=dna algo=SA-LCE size=131072 time=1.64519
+22
+RESULT text=dna algo=SA-RAW size=131072 time=0.463105
+22
+RESULT text=english algo=RA-LCE size=262144 time=1.17988
+20
+RESULT text=english algo=RA-RAW size=262144 time=0.109235
+20
+RESULT text=english algo=SA-LCE size=262144 time=1.63376
+114
+RESULT text=english algo=SA-RAW size=262144 time=0.451397
+114
+RESULT text=a algo=RA-LCE size=262144 time=1.18723
+20
+RESULT text=a algo=RA-RAW size=262144 time=0.133997
+20
+RESULT text=a algo=SA-LCE size=262144 time=1.63381
+20
+RESULT text=a algo=SA-RAW size=262144 time=0.451352
+20
+RESULT text=proteins algo=RA-LCE size=262144 time=1.17957
+20
+RESULT text=proteins algo=RA-RAW size=262144 time=0.109206
+20
+RESULT text=proteins algo=SA-LCE size=262144 time=1.63366
+92
+RESULT text=proteins algo=SA-RAW size=262144 time=0.451359
+92
+RESULT text=dna algo=RA-LCE size=262144 time=1.17979
+20
+RESULT text=dna algo=RA-RAW size=262144 time=0.109035
+20
+RESULT text=dna algo=SA-LCE size=262144 time=1.63383
+107
+RESULT text=dna algo=SA-RAW size=262144 time=0.451365
+107
+RESULT text=english algo=RA-LCE size=524288 time=1.18353
+20
+RESULT text=english algo=RA-RAW size=524288 time=0.13129
+20
+RESULT text=english algo=SA-LCE size=524288 time=1.62121
+77
+RESULT text=english algo=SA-RAW size=524288 time=0.436988
+77
+RESULT text=a algo=RA-LCE size=524288 time=1.18205
+20
+RESULT text=a algo=RA-RAW size=524288 time=0.131681
+20
+RESULT text=a algo=SA-LCE size=524288 time=1.61956
+20
+RESULT text=a algo=SA-RAW size=524288 time=0.436969
+20
+RESULT text=proteins algo=RA-LCE size=524288 time=1.18098
+20
+RESULT text=proteins algo=RA-RAW size=524288 time=0.13196
+20
+RESULT text=proteins algo=SA-LCE size=524288 time=1.61951
+115
+RESULT text=proteins algo=SA-RAW size=524288 time=0.436953
+115
+RESULT text=dna algo=RA-LCE size=524288 time=1.18108
+20
+RESULT text=dna algo=RA-RAW size=524288 time=0.132166
+20
+RESULT text=dna algo=SA-LCE size=524288 time=1.61945
+50
+RESULT text=dna algo=SA-RAW size=524288 time=0.436919
+50
+RESULT text=english algo=RA-LCE size=1048576 time=1.1824
+20
+RESULT text=english algo=RA-RAW size=1048576 time=0.141068
+20
+RESULT text=english algo=SA-LCE size=1048576 time=1.60825
+133
+RESULT text=english algo=SA-RAW size=1048576 time=0.425324
+133
+RESULT text=a algo=RA-LCE size=1048576 time=1.18291
+20
+RESULT text=a algo=RA-RAW size=1048576 time=0.140891
+20
+RESULT text=a algo=SA-LCE size=1048576 time=1.60788
+20
+RESULT text=a algo=SA-RAW size=1048576 time=0.425302
+20
+RESULT text=proteins algo=RA-LCE size=1048576 time=1.18272
+20
+RESULT text=proteins algo=RA-RAW size=1048576 time=0.140943
+20
+RESULT text=proteins algo=SA-LCE size=1048576 time=1.60791
+98
+RESULT text=proteins algo=SA-RAW size=1048576 time=0.425378
+98
+RESULT text=dna algo=RA-LCE size=1048576 time=1.27456
+20
+RESULT text=dna algo=RA-RAW size=1048576 time=0.204747
+20
+RESULT text=dna algo=SA-LCE size=1048576 time=1.60941
+20
+RESULT text=dna algo=SA-RAW size=1048576 time=0.425282
+20
+RESULT text=english algo=RA-LCE size=2097152 time=1.1825
+20
+RESULT text=english algo=RA-RAW size=2097152 time=0.145953
+20
+RESULT text=english algo=SA-LCE size=2097152 time=1.59383
+73
+RESULT text=english algo=SA-RAW size=2097152 time=0.4111
+73
+RESULT text=a algo=RA-LCE size=2097152 time=1.18235
+20
+RESULT text=a algo=RA-RAW size=2097152 time=0.146204
+20
+RESULT text=a algo=SA-LCE size=2097152 time=1.59376
+20
+RESULT text=a algo=SA-RAW size=2097152 time=0.411087
+20
+RESULT text=proteins algo=RA-LCE size=2097152 time=1.18262
+20
+RESULT text=proteins algo=RA-RAW size=2097152 time=0.146189
+20
+RESULT text=proteins algo=SA-LCE size=2097152 time=1.59377
+104
+RESULT text=proteins algo=SA-RAW size=2097152 time=0.411068
+104
+RESULT text=dna algo=RA-LCE size=2097152 time=1.1826
+20
+RESULT text=dna algo=RA-RAW size=2097152 time=0.145986
+20
+RESULT text=dna algo=SA-LCE size=2097152 time=1.59379
+97
+RESULT text=dna algo=SA-RAW size=2097152 time=0.411072
+97
+RESULT text=english algo=RA-LCE size=4194304 time=1.22402
+20
+RESULT text=english algo=RA-RAW size=4194304 time=0.223164
+20
+RESULT text=english algo=SA-LCE size=4194304 time=1.58309
+139
+RESULT text=english algo=SA-RAW size=4194304 time=0.400027
+139
+RESULT text=a algo=RA-LCE size=4194304 time=1.22564
+20
+RESULT text=a algo=RA-RAW size=4194304 time=0.223752
+20
+RESULT text=a algo=SA-LCE size=4194304 time=1.58324
+20
+RESULT text=a algo=SA-RAW size=4194304 time=0.400002
+20
+RESULT text=proteins algo=RA-LCE size=4194304 time=1.22306
+20
+RESULT text=proteins algo=RA-RAW size=4194304 time=0.23161
+20
+RESULT text=proteins algo=SA-LCE size=4194304 time=1.58308
+45
+RESULT text=proteins algo=SA-RAW size=4194304 time=0.400046
+45
+RESULT text=dna algo=RA-LCE size=4194304 time=1.22222
+20
+RESULT text=dna algo=RA-RAW size=4194304 time=0.226488
+20
+RESULT text=dna algo=SA-LCE size=4194304 time=1.58325
+41
+RESULT text=dna algo=SA-RAW size=4194304 time=0.400019
+41
+RESULT text=english algo=RA-LCE size=8388608 time=2.00828
+20
+RESULT text=english algo=RA-RAW size=8388608 time=0.593587
+20
+RESULT text=english algo=SA-LCE size=8388608 time=1.57039
+97
+RESULT text=english algo=SA-RAW size=8388608 time=0.386913
+97
+RESULT text=a algo=RA-LCE size=8388608 time=2.01268
+20
+RESULT text=a algo=RA-RAW size=8388608 time=0.593608
+20
+RESULT text=a algo=SA-LCE size=8388608 time=1.57043
+20
+RESULT text=a algo=SA-RAW size=8388608 time=0.386932
+20
+RESULT text=proteins algo=RA-LCE size=8388608 time=2.03838
+20
+RESULT text=proteins algo=RA-RAW size=8388608 time=0.58834
+20
+RESULT text=proteins algo=SA-LCE size=8388608 time=1.57033
+93
+RESULT text=proteins algo=SA-RAW size=8388608 time=0.386936
+93
+RESULT text=dna algo=RA-LCE size=8388608 time=2.01422
+20
+RESULT text=dna algo=RA-RAW size=8388608 time=0.594304
+20
+RESULT text=dna algo=SA-LCE size=8388608 time=1.57058
+114
+RESULT text=dna algo=SA-RAW size=8388608 time=0.386926
+114
+RESULT text=english algo=RA-LCE size=16777216 time=2.9047
+20
+RESULT text=english algo=RA-RAW size=16777216 time=0.707613
+20
+RESULT text=english algo=SA-LCE size=16777216 time=1.56178
+119
+RESULT text=english algo=SA-RAW size=16777216 time=0.378078
+119
+RESULT text=a algo=RA-LCE size=16777216 time=2.9024
+20
+RESULT text=a algo=RA-RAW size=16777216 time=0.707378
+20
+RESULT text=a algo=SA-LCE size=16777216 time=1.5619
+20
+RESULT text=a algo=SA-RAW size=16777216 time=0.378091
+20
+RESULT text=proteins algo=RA-LCE size=16777216 time=2.90766
+20
+RESULT text=proteins algo=RA-RAW size=16777216 time=0.707435
+20
+RESULT text=proteins algo=SA-LCE size=16777216 time=1.56173
+48
+RESULT text=proteins algo=SA-RAW size=16777216 time=0.378069
+48
+RESULT text=dna algo=RA-LCE size=16777216 time=2.90639
+20
+RESULT text=dna algo=RA-RAW size=16777216 time=0.707934
+20
+RESULT text=dna algo=SA-LCE size=16777216 time=1.56204
+29
+RESULT text=dna algo=SA-RAW size=16777216 time=0.378072
+29
+RESULT text=english algo=RA-LCE size=33554432 time=3.28817
+20
+RESULT text=english algo=RA-RAW size=33554432 time=0.74016
+20
+RESULT text=english algo=SA-LCE size=33554432 time=1.55332
+24
+RESULT text=english algo=SA-RAW size=33554432 time=0.369408
+24
+RESULT text=a algo=RA-LCE size=33554432 time=3.28456
+20
+RESULT text=a algo=RA-RAW size=33554432 time=0.741567
+20
+RESULT text=a algo=SA-LCE size=33554432 time=1.55329
+20
+RESULT text=a algo=SA-RAW size=33554432 time=0.369436
+20
+RESULT text=proteins algo=RA-LCE size=33554432 time=3.20281
+20
+RESULT text=proteins algo=RA-RAW size=33554432 time=0.740677
+20
+RESULT text=proteins algo=SA-LCE size=33554432 time=1.55335
+39
+RESULT text=proteins algo=SA-RAW size=33554432 time=0.369412
+39
+RESULT text=dna algo=RA-LCE size=33554432 time=3.28786
+20
+RESULT text=dna algo=RA-RAW size=33554432 time=0.740458
+20
+RESULT text=dna algo=SA-LCE size=33554432 time=1.55324
+109
+RESULT text=dna algo=SA-RAW size=33554432 time=0.369418
+109
+RESULT text=english algo=RA-LCE size=67108864 time=3.47395
+20
+RESULT text=english algo=RA-RAW size=67108864 time=0.761437
+20
+RESULT text=english algo=SA-LCE size=67108864 time=1.55353
+51
+RESULT text=english algo=SA-RAW size=67108864 time=0.36943
+51
+RESULT text=a algo=RA-LCE size=67108864 time=3.49857
+20
+RESULT text=a algo=RA-RAW size=67108864 time=0.761055
+20
+RESULT text=a algo=SA-LCE size=67108864 time=1.55332
+20
+RESULT text=a algo=SA-RAW size=67108864 time=0.3694
+20
+RESULT text=proteins algo=RA-LCE size=67108864 time=3.49822
+20
+RESULT text=proteins algo=RA-RAW size=67108864 time=0.761225
+20
+RESULT text=proteins algo=SA-LCE size=67108864 time=1.55331
+35
+RESULT text=proteins algo=SA-RAW size=67108864 time=0.369414
+35
+RESULT text=dna algo=RA-LCE size=67108864 time=3.47512
+20
+RESULT text=dna algo=RA-RAW size=67108864 time=0.762496
+20
+RESULT text=dna algo=SA-LCE size=67108864 time=1.55327
+31
+RESULT text=dna algo=SA-RAW size=67108864 time=0.36944
+31
+RESULT text=english algo=RA-LCE size=134217728 time=3.59743
+20
+RESULT text=english algo=RA-RAW size=134217728 time=0.79183
+20
+RESULT text=english algo=SA-LCE size=134217728 time=1.55328
+73
+RESULT text=english algo=SA-RAW size=134217728 time=0.369414
+73
+RESULT text=a algo=RA-LCE size=134217728 time=3.6006
+20
+RESULT text=a algo=RA-RAW size=134217728 time=0.791129
+20
+RESULT text=a algo=SA-LCE size=134217728 time=1.55332
+20
+RESULT text=a algo=SA-RAW size=134217728 time=0.369406
+20
+RESULT text=proteins algo=RA-LCE size=134217728 time=3.51777
+20
+RESULT text=proteins algo=RA-RAW size=134217728 time=0.791962
+20
+RESULT text=proteins algo=SA-LCE size=134217728 time=1.55373
+104
+RESULT text=proteins algo=SA-RAW size=134217728 time=0.369417
+104
+RESULT text=dna algo=RA-LCE size=134217728 time=3.59824
+20
+RESULT text=dna algo=RA-RAW size=134217728 time=0.791996
+20
+RESULT text=dna algo=SA-LCE size=134217728 time=1.55334
+38
+RESULT text=dna algo=SA-RAW size=134217728 time=0.369397
+38
+RESULT text=english algo=RA-LCE size=268435456 time=3.68715
+20
+RESULT text=english algo=RA-RAW size=268435456 time=0.834796
+20
+RESULT text=english algo=SA-LCE size=268435456 time=1.55342
+73
+RESULT text=english algo=SA-RAW size=268435456 time=0.369423
+73
+RESULT text=a algo=RA-LCE size=268435456 time=3.68613
+20
+RESULT text=a algo=RA-RAW size=268435456 time=0.813612
+20
+RESULT text=a algo=SA-LCE size=268435456 time=1.55327
+20
+RESULT text=a algo=SA-RAW size=268435456 time=0.369399
+20
+RESULT text=proteins algo=RA-LCE size=268435456 time=3.68661
+20
+RESULT text=proteins algo=RA-RAW size=268435456 time=0.811478
+20
+RESULT text=proteins algo=SA-LCE size=268435456 time=1.55333
+104
+RESULT text=proteins algo=SA-RAW size=268435456 time=0.369372
+104
+RESULT text=dna algo=RA-LCE size=268435456 time=3.51236
+20
+RESULT text=dna algo=RA-RAW size=268435456 time=0.812583
+20
+RESULT text=dna algo=SA-LCE size=268435456 time=1.55336
+38
+RESULT text=dna algo=SA-RAW size=268435456 time=0.369438
+38
+RESULT text=english algo=RA-LCE size=536870912 time=3.75719
+20
+RESULT text=english algo=RA-RAW size=536870912 time=0.840202
+20
+RESULT text=english algo=SA-LCE size=536870912 time=1.55336
+73
+RESULT text=english algo=SA-RAW size=536870912 time=0.369476
+73
+RESULT text=a algo=RA-LCE size=536870912 time=3.75465
+20
+RESULT text=a algo=RA-RAW size=536870912 time=0.840604
+20
+RESULT text=a algo=SA-LCE size=536870912 time=1.55317
+20
+RESULT text=a algo=SA-RAW size=536870912 time=0.369416
+20
+RESULT text=proteins algo=RA-LCE size=536870912 time=3.75595
+20
+RESULT text=proteins algo=RA-RAW size=536870912 time=0.841299
+20
+RESULT text=proteins algo=SA-LCE size=536870912 time=1.55403
+104
+RESULT text=proteins algo=SA-RAW size=536870912 time=0.369412
+104
+dna finished.
+RESULT text=dna algo=RA-LCE size=403927746 time=3.61839
+20
+RESULT text=dna algo=RA-RAW size=403927746 time=0.826364
+20
+RESULT text=dna algo=SA-LCE size=403927746 time=1.5533
+38
+RESULT text=dna algo=SA-RAW size=403927746 time=0.369402
+38
+RESULT text=english algo=RA-LCE size=1073741824 time=3.95188
+20
+RESULT text=english algo=RA-RAW size=1073741824 time=1.0367
+20
+RESULT text=english algo=SA-LCE size=1073741824 time=1.55344
+73
+RESULT text=english algo=SA-RAW size=1073741824 time=0.369456
+73
+RESULT text=a algo=RA-LCE size=1073741824 time=3.95133
+20
+RESULT text=a algo=RA-RAW size=1073741824 time=1.04855
+20
+RESULT text=a algo=SA-LCE size=1073741824 time=1.5533
+20
+RESULT text=a algo=SA-RAW size=1073741824 time=0.369415
+20
+RESULT text=proteins algo=RA-LCE size=1073741824 time=3.95033
+20
+RESULT text=proteins algo=RA-RAW size=1073741824 time=1.04432
+20
+RESULT text=proteins algo=SA-LCE size=1073741824 time=1.55319
+104
+RESULT text=proteins algo=SA-RAW size=1073741824 time=0.369412
+104
+RESULT text=english algo=RA-LCE size=2147483648 time=4.69752
+20
+RESULT text=english algo=RA-RAW size=2147483648 time=1.95777
+20
+RESULT text=english algo=SA-LCE size=2147483648 time=1.55328
+73
+RESULT text=english algo=SA-RAW size=2147483648 time=0.36938
+73
+a finished.
+RESULT text=a algo=RA-LCE size=2000000000 time=4.64871
+20
+RESULT text=a algo=RA-RAW size=2000000000 time=1.83101
+20
+RESULT text=a algo=SA-LCE size=2000000000 time=1.55333
+20
+RESULT text=a algo=SA-RAW size=2000000000 time=0.369404
+20
+proteins finished.
+RESULT text=proteins algo=RA-LCE size=1184051855 time=4.01091
+20
+RESULT text=proteins algo=RA-RAW size=1184051855 time=1.11166
+20
+RESULT text=proteins algo=SA-LCE size=1184051855 time=1.55328
+104
+RESULT text=proteins algo=SA-RAW size=1184051855 time=0.369427
+104
+english finished.
+RESULT text=english algo=RA-LCE size=2210395553 time=4.74686
+20
+RESULT text=english algo=RA-RAW size=2210395553 time=2.05434
+20
+RESULT text=english algo=SA-LCE size=2210395553 time=1.55357
+73
+RESULT text=english algo=SA-RAW size=2210395553 time=0.369379
+73
