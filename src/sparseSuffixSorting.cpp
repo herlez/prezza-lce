@@ -5,31 +5,34 @@
 #include <sys/time.h>
 #include <array>
 #include <algorithm>
- 
+#include <vector>
 #include "util.hpp"
 #include "lce.hpp"
 
-//#define consoleIO
 
 using namespace std;
 
 lce::lceDataStructure dataLCE;
-uint64_t size = 1000000000ULL;
-char * dataRaw = new char[size];
+char * dataRaw;
+uint64_t dataSize;
+
+vector<unsigned long> suf1;
+vector<unsigned long> suf2;
 
 
 
 struct less_than_key
 {
-    inline bool operator() (const uint64_t a, const uint64_t b)
+    inline bool operator() (const unsigned long a, const unsigned long b)
     {
-		uint64_t i = a;
-		uint64_t j = b;
+		unsigned long i = a;
+		unsigned long j = b;
 		if (i == j) {
 			return true;
 		}
 		
-		while(i < size && j < size) {
+		while(i < dataSize && j < dataSize) {
+			//cout << i << "  " << j << endl;
 			if (dataRaw[i] == dataRaw[j]) {
 				i++; j++;
 			} else {
@@ -41,9 +44,10 @@ struct less_than_key
 };
 
 
+
 struct less_than_lce
 {
-	inline bool operator() (const uint64_t a, const uint64_t b)
+	inline bool operator() (const unsigned long a, const unsigned long b)
 	{
 		uint64_t lce  = lce::fastlce(&dataLCE, a, b);
 		if (a + lce >= dataLCE.numberOfBytes) { return true; }
@@ -67,82 +71,98 @@ double timestamp()
 
 int main(int argc, char *argv[]) {
 	
-	ofstream log("sss.txt", ios::out|ios::trunc);
+	ofstream log("../test/sssTest.txt", ios::out|ios::trunc);
     //cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt!
 	
-	string fileNames[] {"english", "proteins", "a"};
-	string files[] = {"../text/english", "../text/proteins", "../text/a"}; 
-	double ts1, ts2;//timestamps
-	/* Beforehand generate random numbers */
+	string fileNames[] {"english", "proteins", "dna",  "a"};
+	string files[] = {"../text/english", "../text/proteins", "../text/dna", "../text/a"};
+	bool testFinished[] = {false, false, false, false};
+	
+	 
+	double ts1 = 0, ts2 = 0, ts3 = 0, ts4 = 0;//timestamps
 	srand(0);
 	
-	cout << "ok" << endl;
-	/* Do the SSS test */
-	//std::array<uint64_t ,10000000>* suf1 = new array<uint64_t, 10000000>;
-	//std::array<uint64_t ,10000000>* suf2 = new array<uint64_t, 10000000>;
 	
-	//for(uint64_t i = 0; i < suffixes1.size(); i++) {
-	//	suffixes1[i] = util::randomIndex(1000000000ULL); // Indexes up to 10^9
-	//	suffixes2[i] = suffixes1[i];
-	//}
-
-	for(unsigned int fileNumber = 0; fileNumber < 2; fileNumber++) {		
+	for(unsigned int fileNumber = 0; fileNumber < 4; fileNumber++) {	
+		/* Load LCE data structure */	
 		string filePath = files[fileNumber];
 		ifstream inputStream (filePath, ios::in|ios::binary);
 		util::inputErrorHandling(&inputStream);
+		dataSize = util::calculateSizeOfInputFile(&inputStream);
 		
+		/* Load raw text */
+		log << "Data size: " << dataSize << endl;
+		dataRaw = new char[dataSize];
 		inputStream.seekg(0);
-		inputStream.read(dataRaw, size);
-		lce::buildLCEDataStructure(&dataLCE, filePath, size);
+		inputStream.read(dataRaw, dataSize);
+		lce::buildLCEDataStructure(&dataLCE, filePath, dataSize);
 		
-		constexpr uint64_t sizes[] = {1000000};
-		for(int i = 0; i < 1; i++)
+		
+		ts1 = ts2 = ts3 = ts4 = 0; 
+		for(unsigned long i = pow(2, 5); i < pow(2, 30) && !testFinished[fileNumber]; i = i*2)
 		{
-			//generate random indexes
-			cout << "lul"<< endl;;
-			std::array<uint64_t ,sizes[0]> suf1;
-			std::array<uint64_t ,sizes[0]> suf2;
-			cout << "lul";
-	
-			for(uint64_t i = 0; i < suf1.size(); i++) {
-				suf1[i] = util::randomIndex(1000000000ULL); // Indexes up to 10^9
-				suf2[i] = suf1.at(i);
+			if (i > dataSize) {
+				i = dataSize;
+				testFinished[fileNumber] = true;
 			}
 			
+				
+				
+
+			suf1.resize(i);
+			suf2.resize(i);
+			log << suf1.size() << endl;;
+			//suf2.resize(i);
+			//generate random indexes
+			for(unsigned long j = 0; j < i; j++) {
+				suf1[j] = (j*dataSize)/i; // Random index
+				suf2[j] = suf1[j];
+			}
+			 
 			//Sort, using std::sort
 			
-			ts1 = timestamp();
-			std::sort(suf1.begin(), suf1.end(), less_than_key());
-			ts2 = timestamp();
-			log << "RESULT"
-					<< " text=" << fileNames[fileNumber]
-					<< " size=" << size
-					<< " suffixes=" << suf1.size()
-					<< " algo=" << "std::sort_naive"
-					<< " time=" << ts2-ts1
-					<< endl;
 			
-			
+			if(ts2-ts1 < 30) {
+				ts1 = timestamp();
+				std::sort(suf1.begin(), suf1.end(), less_than_key());
+				ts2 = timestamp();
+				log << "RESULT"
+						<< " text=" << fileNames[fileNumber]
+						<< " size=" << dataSize
+						<< " suffixes=" << i
+						<< " algo=" << "std::sort_naive"
+						<< " time=" << ts2-ts1
+						<< endl;
+			}
+
 			
 			//Sort, using fastLCE queries
 			
+			if(ts4-ts3 < 30) {
+				ts3 = timestamp();
+				std::sort(suf2.begin(), suf2.end(), less_than_lce());
+				ts4 = timestamp();
+				log << "RESULT"
+						<< " text=" << fileNames[fileNumber]
+						<< " size=" << dataSize
+						<< " suffixes=" << i
+						<< " algo=" << "std::sort_fastlce"
+						<< " time=" << ts4-ts3
+						<< endl;
+			}
 			
-			ts1 = timestamp();
-			std::sort(suf2.begin(), suf2.end(), less_than_lce());
-			ts2 = timestamp();
-			log << "RESULT"
-					<< " text=" << fileNames[fileNumber]
-					<< " size=" << size
-					<< " suffixes=" << suf2.size()
-					<< " algo=" << "std::sort_fastlce"
-					<< " time=" << ts2-ts1
-					<< endl;
+			if(ts2-ts1 > 30 && ts4-ts3 > 30) {
+				testFinished[fileNumber] = true;
+			}
+			
+		//validate sss
 		
 		
-		delete[] &suf1;
-		delete[] &suf2;
-
-		}		
+		
+		
+		}
+		delete[] dataLCE.fingerprints;
+		delete[] dataRaw;		
 	}
 	return EXIT_SUCCESS;
 	

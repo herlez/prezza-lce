@@ -121,7 +121,11 @@ public:
 	
 	static uint64_t getBlock (lceDataStructure * lceData, uint64_t index) {
 		if (index == 0) {
-			return lceData->fingerprints[0];
+			if(lceData->fingerprints[0] > 0x8000000000000000ULL) {
+				return lceData->fingerprints[0] - 0x8000000000000000ULL + lceData->prime ;
+			} else {
+				return lceData->fingerprints[0];
+			}
 		} else {
 			return calculateBlock(lceData->fingerprints[index-1], lceData->fingerprints[index], lceData->prime);
 		}
@@ -138,7 +142,7 @@ public:
 	
 
 	
-private:
+//private:
 
 	static uint64_t getFingerprint(lceDataStructure * lceData, uint64_t from, int exponent) {	
 		if (from == 0) {
@@ -195,9 +199,13 @@ private:
             input += 8;
         }  
 		/* Here all fingerprints are calculated */
-        
-        
-		lceData->fingerprints[0] = lceData->fingerprints[0];
+		//The first block
+		int sBit = 0;
+		if(lceData->fingerprints[0] > 0x8000000000000000ULL) {
+			sBit = 1;
+		}
+		lceData->fingerprints[0] = lceData->fingerprints[0] % lceData->prime + sBit*0x8000000000000000;
+		//Every other block
         for (uint64_t i = 1; i < lceData->numberOfBlocks; i++) {
 			lceData->fingerprints[i] = calculateFingerprint(lceData->fingerprints[i], lceData->fingerprints[i-1], lceData->prime);
 		}
@@ -245,11 +253,10 @@ private:
 		} else {
 			Y = prime - (Y - currentFingerprint);
 		}
-
-		if (currentFingerprint >= 0x8000000000000000ULL) {
-			Y += prime;
-		}
-		return Y + sBit*(uint64_t)prime;
+		/*util::printInt64(Y);
+		std::cout << sBit << std::endl;
+		*/
+		return Y + sBit*(uint64_t)prime;// - sBit*0x8000000000000000ULL;
 	}
 	
 	/* VALIDIERT */
@@ -259,7 +266,7 @@ private:
 	
 
 	if(padding == 0) {
-		return lceData->fingerprints[to/8];
+		return lceData->fingerprints[to/8] & ((1ULL << 63) - 1); //removes the first byte, if it was set
 	}
 	if(to < 8) {
 		fingerprint = 0;

@@ -28,6 +28,7 @@ int main(int argc, char *argv[]) {
     cout << "Constructing LCE data stucture" << endl;
 	lce::lceDataStructure dataLCE;
 	lce::buildLCEDataStructure(&dataLCE, TESTFILE);
+	cout << "Prime: "; util::printInt128(dataLCE.prime);
 	
 	/* Load raw Text */
 	cout << "Loading raw text" << endl;
@@ -50,6 +51,7 @@ int main(int argc, char *argv[]) {
 		
 		if(dataRaw[i] != lce::getChar(&dataLCE, i)) {
 			cout << "Wrong Char: Error at position " << i << endl;
+			cout << (unsigned char) dataRaw[i] << " is not " << lce::getChar(&dataLCE, i) << endl;
 		}
 	}
 #endif
@@ -91,27 +93,48 @@ int main(int argc, char *argv[]) {
 #endif
 	
 	
+
 #ifdef testLCE
 	/* Test if LCE Queries are correct */
 	cout << "Testing if LCE queries are correct" << endl;
 	uint64_t lceRaw = 0;
 	uint64_t lceFast = 0;
 	
-	for(uint64_t i = 0; i < 2000; i++) {
-		for(uint64_t j = 0; j < 2000; j++) {
-			lceRaw = lce::naivelce(dataRaw, dataSize, i, j);
-			lceFast = lce::fastlce(&dataLCE, i, j);
+	//uint64_t indexI = 102;
+	//uint64_t indexJ = 247;
+
+	for(uint64_t i = 0; i < 2000000; i++) { 
+		uint64_t indexI = util::randomIndex(dataLCE.numberOfBytes);
+		uint64_t indexJ = util::randomIndex(dataLCE.numberOfBytes);
+		lceRaw = lce::naivelce(dataRaw, dataSize, indexI, indexJ);
+		lceFast = lce::fastlce(&dataLCE, indexI, indexJ);
+		
+		if(lceRaw != lceFast) {
+			cout << "Wrong LCE: Error at position " << indexI << " and " << indexJ << endl;
+			cout << "Block at position " << (indexI/8)-2 << ": "; util::printInt64(lce::getBlock(&dataLCE, (indexI/8)-2));
+			cout << "Block at position " << (indexI/8)-1 << ": "; util::printInt64(lce::getBlock(&dataLCE, (indexI/8)-1));
+			cout << "Block at position " << indexI/8 << ": "; util::printInt64(lce::getBlock(&dataLCE, indexI/8));
+			cout << "Block at position " << (indexJ/8)-2 << ": "; util::printInt64(lce::getBlock(&dataLCE, (indexJ/8)-2));
+			cout << "Block at position " << (indexJ/8)-1 << ": "; util::printInt64(lce::getBlock(&dataLCE, (indexJ/8)-1));
+			cout << "Block at position " << indexJ/8 << ": "; util::printInt64(lce::getBlock(&dataLCE, indexJ/8));
+
+			cout << "Not matching characters: " << lce::getChar(&dataLCE, indexI) << " " << lce::getChar(&dataLCE, indexJ) << endl;
+
+			cout << "Fingerprint at position " << (indexI/8)-2 << ": ";util::printInt64(dataLCE.fingerprints[(indexI/8)-2]); 
+			cout << "Fingerprint at position " << (indexI/8)-1 << ": ";util::printInt64(dataLCE.fingerprints[(indexI/8)-1]); 
+			cout << "Fingerprint at position " << indexI/8 << ": "; util::printInt64(dataLCE.fingerprints[indexI/8]);
+			cout << "Fingerprint at position " << (indexJ/8)-2 << ": ";util::printInt64(dataLCE.fingerprints[(indexJ/8)-2]); 
+			cout << "Fingerprint at position " << (indexJ/8)-1 << ": ";util::printInt64(dataLCE.fingerprints[(indexJ/8)-1]); 
+			cout << "Fingerprint at position " << indexJ/8 << ": "; util::printInt64(dataLCE.fingerprints[indexJ/8]);
+			cout << "" << endl;
 			
-			if(lceRaw != lceFast) {
-				cout << "Wrong LCE: Error at position " << i << " and " << j << endl;
-				cout << "lceRaw:  " << lceRaw << endl;
-				cout << "lceFast: " << lceFast << endl;
-			}
+			cout << "lceRaw:  " << lceRaw << endl;
+			cout << "lceFast: " << lceFast << endl;
 		}
 	}
-#endif
-
-
 	
+#endif
+	
+	cout << "Test ended" << endl;
 	exit(EXIT_SUCCESS);
 }
